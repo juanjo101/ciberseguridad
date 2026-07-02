@@ -29,7 +29,7 @@ def add_border(table):
             tcPr.append(tcBorders)
 
 def generate_markdown(filename, data):
-    md = f"# BIBLIOTECA NACIONAL PEDRO HENRÍQUEZ UREÑA\n**DPyD | Versión 1**\n**MANUAL DE POLÍTICAS Y PROCEDIMIENTOS**\n\n---\n\n"
+    md = f"![Logo BNPHU](/logo-bnphu.png)\n\n# BIBLIOTECA NACIONAL PEDRO HENRÍQUEZ UREÑA\n**DPyD | Versión 1**\n**MANUAL DE POLÍTICAS Y PROCEDIMIENTOS**\n\n---\n\n"
     md += f"**NOMBRE DEL PROCESO:** {data['nombre']}\n\n"
     md += f"| Preparado por: {data['preparado']} | Aprobado por: {data['aprobado']} | Código/Páginas: {data.get('codigo', 'BNPHU-TIC-00X')} |\n|---|---|---|\n\n"
     md += f"**1.0 Propósito o Misión:**\n{data['proposito']}\n\n"
