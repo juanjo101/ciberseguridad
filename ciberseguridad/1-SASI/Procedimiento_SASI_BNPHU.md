@@ -1,66 +1,83 @@
-# BIBLIOTECA NACIONAL PEDRO HENRÍQUEZ UREÑA
-**DPyD | Versión 1**
-**MANUAL DE POLÍTICAS Y PROCEDIMIENTOS**
+<table style="width:100%; text-align:center; border-collapse: collapse; margin-bottom: 20px;" border="1">
+  <tr>
+    <td rowspan="2" style="width: 20%; padding: 10px;"><img src="/logo-bnphu.png" style="width: 120px;" /></td>
+    <td style="font-weight: bold; width: 60%; padding: 10px; font-size: 1.1em;">BIBLIOTECA NACIONAL PEDRO HENRÍQUEZ UREÑA</td>
+    <td rowspan="2" style="width: 20%; padding: 10px;">DPyD<br>Versión 1:<br>Julio 2026</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold; padding: 10px;">MANUAL DE POLÍTICAS Y PROCEDIMIENTOS</td>
+  </tr>
+</table>
 
----
+<table style="width:100%; border-collapse: collapse; margin-bottom: 20px;" border="1">
+  <tr style="background-color: #DDEBF7;">
+    <td colspan="4" style="padding: 5px;"><strong>NOMBRE DEL PROCESO:</strong> Sistema para la Administración de la Seguridad de la Información (SASI)</td>
+  </tr>
+  <tr style="background-color: #DDEBF7;">
+    <td style="width: 25%; padding: 5px;"><strong>Preparado por:</strong> Departamento de TIC</td>
+    <td style="width: 25%; padding: 5px;"><strong>Aprobado por:</strong> Dirección Nacional</td>
+    <td style="width: 20%; padding: 5px;"><strong>Código/<br>Páginas:</strong></td>
+    <td style="width: 30%; padding: 5px;">BNPHU-TIC-001<br>2</td>
+  </tr>
+</table>
 
-**NOMBRE DEL PROCESO:** Sistema para la Administración de la Seguridad de la Información (SASI)
+**1.0 Propósito o Misión:**
+Garantizar la protección de los activos de información de la BNPHU mediante la implementación estructurada y continua de políticas y directrices que aseguren la confidencialidad, integridad y disponibilidad, alineados con el marco NORTIC A7 y el modelo NIST CSF.
 
-| Preparado por: Departamento de Tecnología de la Información y Comunicación (TIC) | Aprobado por: Dirección Nacional | Fecha de emisión: [Pendiente] |
-| :--- | :--- | :--- |
-
-**1.0 Propósito o Misión:** 
-Establecer el alcance, objetivos y responsabilidades para la correcta gestión, implementación y mejora continua del Sistema para la Administración de la Seguridad de la Información (SASI) en la BNPHU, con el fin de salvaguardar la confidencialidad, integridad y disponibilidad de los activos de información, conforme a la NORTIC A7:2016.
-
-**2.0 Alcance:** 
-**Empieza:** Con la definición de los activos de información críticos de la institución.
-**Incluye:** Diseño, implementación, evaluación de riesgos, definición de controles, monitoreo, pruebas de continuidad y mejora continua de la seguridad de la información. Abarca a todo el personal, proveedores y visitantes de la BNPHU.
-**Termina:** Con la revisión anual del sistema o tras auditorías de recertificación (NORTIC A7 / iTICge).
+**2.0 Alcance:**
+- **Empieza:** Definición oficial del alcance y emisión de las políticas generales de seguridad.
+- **Incluye:** Diseño del marco regulatorio, inventario de activos, análisis de riesgos y declaración de aplicabilidad (SoA).
+- **Termina:** Ejecución de auditorías, revisión por la alta gerencia y planes de mejora continua.
 
 **3.0 Dueño o responsables:**
-3.1 Máxima Autoridad Ejecutiva (MAE) / Director(a) Nacional
-3.2 Oficial de Seguridad de la Información (CISO) / Encargado(a) del Departamento TIC
-3.3 Encargado(a) de Recursos Humanos (RRHH)
+3.1 Máxima Autoridad Ejecutiva (MAE)
+3.2 Oficial en Jefe de Seguridad de Información (CISO)
+3.3 Encargados de Áreas
 
 **4.0 Documentos de referencia:**
-4.1 NORTIC A7:2016 - Norma para la Seguridad de las TIC en el Estado Dominicano.
-4.2 Ley No. 53-07 contra Crímenes y Delitos de Alta Tecnología.
-4.3 Ley General de Archivo de la República Dominicana No. 481-08.
-4.4 ISO/IEC 27001 (Referencia de buenas prácticas de controles de seguridad).
-4.5 Inventario de Activos Tecnológicos y de Información de la BNPHU.
+4.1 NORTIC A7:2016 (Cap. I y II)
+4.2 NIST CSF v2.0 (Govern: GV.OC, GV.RM)
+4.3 SISTICGE
+4.4 iTICge
+4.5 ISO 27001
 
 **5.0 Políticas del Procedimiento:**
-5.1 Todo acceso a la red y a la información institucional debe estar regido por el principio de "privilegio mínimo".
-5.2 El Departamento TIC es responsable de mantener la arquitectura de seguridad, la administración de roles, y los sistemas de monitoreo y bitácoras (logs) actualizados.
-5.3 Todos los empleados deben firmar un documento de entendimiento, confidencialidad y compromiso con los lineamientos de seguridad.
-5.4 El incumplimiento de las normativas de seguridad será objeto de un sistema de consecuencias de acuerdo a los lineamientos del Ministerio de Administración Pública (MAP) y leyes vigentes.
-5.5 Se deben realizar auditorías internas, simulacros del Plan de Continuidad y escaneos de vulnerabilidades al menos una (1) vez al año.
+5.1 La MAE es la responsable máxima de garantizar los recursos necesarios para el SASI.
+5.2 El SASI debe estar alineado a los objetivos estratégicos y organizacionales de la BNPHU, apoyado en el Plan Estratégico Institucional (PEI).
+5.3 El organismo mantendrá una Colección de Documentos Legales que rijan las operaciones y acuerdos de confidencialidad institucionales.
+5.4 Todo personal deberá recibir capacitaciones periódicas en ciberseguridad, enfocadas en los roles definidos dentro del SASI.
+5.5 Se requiere una Declaración de Aplicabilidad que indique cuáles de los controles de la norma aplican a la BNPHU.
+5.6 El sistema será evaluado como mínimo una vez al año mediante auditorías internas o externas.
 
 **6.0 Descripción de las Actividades del Proceso:**
 
 | Responsable | Descripción |
-| :--- | :--- |
-| **Director(a) Nacional** | 6.1 Aprueba la constitución del SASI y asigna presupuesto para la mitigación de los riesgos identificados. |
-| **Oficial de Seguridad (TIC)** | 6.2 Diseña la Declaración de Aplicabilidad identificando los controles de seguridad necesarios. |
-| **Oficial de Seguridad (TIC)** | 6.3 Realiza la evaluación de riesgos y elabora la Matriz de Riesgos y el Plan de Tratamiento. |
-| **Recursos Humanos** | 6.4 Gestiona la firma de los acuerdos de confidencialidad y responsabilidades para los nuevos ingresos y personal activo. |
-| **Oficial de Seguridad (TIC)** | 6.5 Configura los mecanismos técnicos (Firewall, IPS, Antivirus, Backups) según lo indicado en el plan. |
-| **Comité de Continuidad** | 6.6 Ejecuta pruebas periódicas de recuperación y elabora el informe de lecciones aprendidas ante incidentes. |
+|---|---|
+| **Alta Dirección / MAE** | 6.1 Define y firma formalmente la Misión del organismo respecto a la ciberseguridad.
+6.2 Asigna los recursos operativos y designa al CISO. |
+| **CISO / Dpto. TIC** | 6.3 Elabora el documento de definición y alcance del SASI identificando todos los sistemas de información.
+6.4 Identifica amenazas, vulnerabilidades, probabilidades e impactos. |
+| **CISO / Dpto. TIC** | 6.5 Define e implementa controles para el tratamiento de riesgos y los plasma en la Declaración de Aplicabilidad.
+6.6 Desarrolla métricas y KPIs para medir la efectividad de los controles implementados. |
+| **Dpto. TIC / Recursos Humanos** | 6.7 Organiza y documenta capacitaciones de concienciación sobre ciberseguridad a todo el personal. |
+| **CISO / Dpto. TIC** | 6.8 Monitorea todas las incidencias y realiza evaluaciones periódicas de riesgos para garantizar la Mejora Continua del SASI. |
 
-**7.0 ANEXOS**
-7.1 Declaración de Aplicabilidad del SASI.
-7.2 Matriz de Gestión de Riesgos.
-7.3 Formulario de Acuerdo de Confidencialidad y Uso Aceptable.
+**7.0 ANEXOS:**
+- 7.1 Documento de Alcance del SASI
+- 7.2 Matriz de Declaración de Aplicabilidad
+- 7.3 Catálogo de Servicios e Inventario de Activos
+- 7.4 Actas de Concienciación
 
 **8.0 REGISTROS:**
 | CODIGO | NOMBRE | ALMACENAMIENTO | ARCHIVADO | TIEMPO | DISPOSICION |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| SEC-001 | Matriz de Riesgos | Servidor Seguro / Archivo Dpto. TIC | Digital e Impreso | Permanente | Restringido (Confidencial) |
+|---|---|---|---|---|---|
+| SEC-DOC | Registro Dpto TIC | Servidor Seguro | Digital/Impreso | Permanente | Restringido |
 
-**9.0 Historia de Cambio**
+**9.0 Historia de Cambio:**
 | REVISIONES | FECHAS | SECCION | DESCRIPCION | REVISADO POR | REFRENDADO POR |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 1.0 | [Fecha actual] | Todas | Creación inicial del documento para cumplimiento NORTIC A7 | Dpto. TIC / Planificación | Dirección Nacional |
+|---|---|---|---|---|---|
+| 1.0 | Actual | Todas | Creación oficial | Dpto. TIC | Dirección |
 
-**10.0 TIEMPO DE RESPUESTA:**
-Revisión y actualización anual obligatoria o ante cambios críticos en la infraestructura de la BNPHU.
+**10.0 TIEMPO DE RESPUESTA:** La revisión del SASI se realiza anualmente o ante cambios significativos.
+
+**FIN DEL PROCEDIMIENTO**

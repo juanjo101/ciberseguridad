@@ -528,15 +528,102 @@ operaciones_data = {
         ("Dpto. Activos / TIC", "6.4 Actualiza la base de datos de inventario con cada ingreso de hardware y software (SISTICGE/NORTIC A1).")
     ],
     "anexos": ["7.1 Matriz de Escaneo de Vulnerabilidades", "7.2 Listado de Activos Tecnológicos", "7.3 Acuerdos de Uso de Equipos (Móviles)"],
-    "tiempo": "Monitoreo mensual de servicios. Actualización constante del inventario."
+    "anexos": ["7.1 Inventario de Hardware", "7.2 Inventario de Software", "7.3 Bitácoras de Monitoreo", "7.4 Registro de Actualizaciones (Parches)"],
+    "tiempo": "Inventarios actualizados anualmente. Parches críticos aplicados en < 48 horas."
 }
 
-# --- GENERACION MASIVA ---
-create_procedure("1-SASI/Procedimiento_SASI_BNPHU.docx", "portal-tic/public/Procedimiento_SASI_BNPHU.md", sasi_data)
-create_procedure("2-Politicas_Seguridad/Administracion_Informacion.docx", "portal-tic/public/Administracion_Informacion.md", admin_info_data)
-create_procedure("3-Controles_Acceso/Gestion_Accesos_y_Privilegios.docx", "portal-tic/public/Gestion_Accesos_y_Privilegios.md", acceso_data)
-create_procedure("4-Continuidad_Negocio/Disponibilidad_y_Continuidad.docx", "portal-tic/public/Disponibilidad_y_Continuidad.md", continuidad_data)
-create_procedure("5-Gestion_Riesgos/Gestion_Riesgos_Ciberseguridad.docx", "portal-tic/public/Gestion_Riesgos_Ciberseguridad.md", riesgos_data)
-create_procedure("6-Control_Operaciones/Control_Operaciones_Activos.docx", "portal-tic/public/Control_Operaciones_Activos.md", operaciones_data)
+pol_general_data = {
+    "nombre": "Política General de Seguridad de la Información",
+    "codigo": "BNPHU-TIC-007",
+    "preparado": "Departamento de TIC",
+    "aprobado": "Dirección Nacional",
+    "proposito": "Establecer el marco rector de seguridad de la información para salvaguardar la confidencialidad, integridad y disponibilidad de los activos de la BNPHU.",
+    "alcance_empieza": "Emisión de la política general y su difusión a todo el personal.",
+    "alcance_incluye": "Directrices generales sobre protección de datos, cumplimiento legal, roles de seguridad y concientización.",
+    "alcance_termina": "Firma del acuerdo de confidencialidad y revisiones anuales.",
+    "responsables": ["3.1 Dirección Nacional", "3.2 Oficial de Seguridad (CISO)", "3.3 Todos los colaboradores"],
+    "referencias": ["4.1 NORTIC A7:2016", "4.2 Ley 53-07 Crímenes y Delitos de Alta Tecnología"],
+    "politicas": [
+        "5.1 La BNPHU se compromete a proteger la información contra accesos no autorizados y modificaciones ilícitas.",
+        "5.2 Todos los empleados, contratistas y proveedores son responsables de cumplir estas normativas.",
+        "5.3 El incumplimiento de las políticas de seguridad acarreará sanciones administrativas.",
+        "5.4 Se impartirá capacitación de concientización anual obligatoria."
+    ],
+    "actividades": [
+        ("Dirección Nacional", "6.1 Aprueba y respalda oficialmente las políticas de seguridad."),
+        ("Dpto. TIC / CISO", "6.2 Difunde las políticas mediante el portal web y correos institucionales."),
+        ("RRHH / Empleados", "6.3 Firman la lectura y aceptación de la Política General de Seguridad.")
+    ],
+    "anexos": ["7.1 Carta de Aceptación de Políticas", "7.2 Programa de Concientización"],
+    "tiempo": "Revisión y actualización anual."
+}
+
+alta_baja_data = {
+    "nombre": "Procedimiento de Gestión de Alta, Baja y Modificación de Usuarios",
+    "codigo": "BNPHU-TIC-008",
+    "preparado": "Departamento de TIC",
+    "aprobado": "Dirección Nacional",
+    "proposito": "Garantizar que la creación, modificación y eliminación de accesos a los sistemas se realice de forma segura, controlada y auditada.",
+    "alcance_empieza": "Recepción de solicitud formal por parte de Recursos Humanos.",
+    "alcance_incluye": "Creación de credenciales en Active Directory, asignación de correos, ERP, y revocación de los mismos al término del contrato.",
+    "alcance_termina": "Confirmación del alta o revocación y archivo del ticket.",
+    "responsables": ["3.1 Dpto. Recursos Humanos", "3.2 Mesa de Ayuda TIC", "3.3 Administrador de Sistemas"],
+    "referencias": ["4.1 NORTIC A7:2016 (Control de Accesos)"],
+    "politicas": [
+        "5.1 Cero Confianza: Ningún usuario tendrá acceso a sistemas sin solicitud formal firmada.",
+        "5.2 Tiempos de Baja: Las cuentas deben deshabilitarse el mismo día de la salida del colaborador.",
+        "5.3 Privilegios Mínimos: Se asignarán únicamente los accesos necesarios para el puesto."
+    ],
+    "actividades": [
+        ("RRHH", "6.1 Envía formulario de novedad (Alta/Baja/Cambio) a TIC."),
+        ("Mesa de Ayuda TIC", "6.2 Registra ticket y lo escala al Administrador de Sistemas."),
+        ("Admin. de Sistemas", "6.3 Ejecuta la creación o bloqueo de cuenta, correo electrónico y permisos de carpetas."),
+        ("Mesa de Ayuda TIC", "6.4 Notifica a RRHH o al usuario y cierra el ticket con las evidencias.")
+    ],
+    "anexos": ["7.1 Formulario de Solicitud de Acceso", "7.2 Matriz de Perfiles y Permisos"],
+    "tiempo": "Altas en 48 horas. Bajas de forma inmediata (max. 4 horas)."
+}
+
+incidentes_data = {
+    "nombre": "Procedimiento de Gestión de Incidentes de Ciberseguridad",
+    "codigo": "BNPHU-TIC-009",
+    "preparado": "Departamento de TIC",
+    "aprobado": "Dirección Nacional",
+    "proposito": "Proveer una metodología estandarizada para responder a incidentes que amenacen la seguridad (Ej. Ransomware, Phishing, Fugas de Datos).",
+    "alcance_empieza": "Detección de evento anómalo o reporte de usuario.",
+    "alcance_incluye": "Triaje, contención, erradicación, recuperación e investigación post-incidente.",
+    "alcance_termina": "Elaboración de informe de incidente y cierre forense.",
+    "responsables": ["3.1 CSIRT Interno (Equipo de Respuesta)", "3.2 Oficial de Seguridad (CISO)"],
+    "referencias": ["4.1 NORTIC A7:2016", "4.2 NIST Incident Response Guide (SP 800-61 Rev. 2)"],
+    "politicas": [
+        "5.1 Todo empleado debe reportar inmediatamente equipos lentos, correos sospechosos o pérdida de información.",
+        "5.2 Preservación Forense: No se apagará ni formateará el equipo afectado sin autorización del CISO para conservar la cadena de custodia.",
+        "5.3 Reporte Obligatorio: Incidentes críticos se reportarán al CSIRT Nacional (CNCS) en menos de 24 horas."
+    ],
+    "actividades": [
+        ("Usuario", "6.1 Detecta anomalía y reporta inmediatamente al Centro de Servicios TIC."),
+        ("CSIRT Interno", "6.2 Evalúa y clasifica el incidente. Aplica medidas de contención (desconectar de la red)."),
+        ("CSIRT Interno", "6.3 Elimina la amenaza (erradicación) y restaura sistemas desde backups limpios (recuperación)."),
+        ("CISO", "6.4 Elabora reporte post-incidente, documenta Indicadores de Compromiso (IoCs) y establece medidas preventivas futuras.")
+    ],
+    "anexos": ["7.1 Plantilla de Reporte de Incidente", "7.2 Cadena de Custodia de Evidencias"],
+    "tiempo": "Contención inicial en 1-2 horas según gravedad."
+}
+
+manuales_data = [
+    ("Procedimiento_SASI_BNPHU", "1-SASI", sasi_data),
+    ("Administracion_Informacion", "2-Politicas_Seguridad", admin_info_data),
+    ("Politica_General_Seguridad", "2-Politicas_Seguridad", pol_general_data),
+    ("Gestion_Accesos_y_Privilegios", "3-Controles_Acceso", acceso_data),
+    ("Procedimiento_Alta_Baja_Usuarios", "3-Controles_Acceso", alta_baja_data),
+    ("Disponibilidad_y_Continuidad", "4-Continuidad_Negocio", continuidad_data),
+    ("Gestion_Incidentes_Ciberseguridad", "4-Continuidad_Negocio", incidentes_data),
+    ("Gestion_Riesgos_Ciberseguridad", "5-Gestion_Riesgos", riesgos_data),
+    ("Control_Operaciones_Activos", "6-Control_Operaciones", operaciones_data)
+]
+
+for filename, folder, data in manuales_data:
+    os.makedirs(folder, exist_ok=True)
+    create_procedure(f"{folder}/{filename}.docx", f"{folder}/{filename}.md", data)
 
 print("Documentos DOCX y MD generados con exito y con contenido NORTIC/NIST completo!")
