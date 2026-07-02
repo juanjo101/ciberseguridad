@@ -56,9 +56,10 @@ Establecer las medidas de protección y control sobre las plataformas web, redes
 | **Dpto. Activos / TIC** | 6.4 Actualiza la base de datos de inventario con cada ingreso de hardware y software (SISTICGE/NORTIC A1). |
 
 **7.0 ANEXOS:**
-- 7.1 Matriz de Escaneo de Vulnerabilidades
-- 7.2 Listado de Activos Tecnológicos
-- 7.3 Acuerdos de Uso de Equipos (Móviles)
+- 7.1 Inventario de Hardware
+- 7.2 Inventario de Software
+- 7.3 Bitácoras de Monitoreo
+- 7.4 Registro de Actualizaciones (Parches)
 
 **8.0 REGISTROS:**
 | CODIGO | NOMBRE | ALMACENAMIENTO | ARCHIVADO | TIEMPO | DISPOSICION |
@@ -70,6 +71,6 @@ Establecer las medidas de protección y control sobre las plataformas web, redes
 |---|---|---|---|---|---|
 | 1.0 | Actual | Todas | Creación oficial | Dpto. TIC | Dirección |
 
-**10.0 TIEMPO DE RESPUESTA:** Monitoreo mensual de servicios. Actualización constante del inventario.
+**10.0 TIEMPO DE RESPUESTA:** Inventarios actualizados anualmente. Parches críticos aplicados en < 48 horas.
 
 **FIN DEL PROCEDIMIENTO**
