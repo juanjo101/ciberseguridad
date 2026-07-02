@@ -2,7 +2,7 @@
   <tr>
     <td rowspan="2" style="width: 20%; padding: 10px;"><img src="/logo-bnphu.png" style="width: 120px;" /></td>
     <td style="font-weight: bold; width: 60%; padding: 10px; font-size: 1.1em;">BIBLIOTECA NACIONAL PEDRO HENRÍQUEZ UREÑA</td>
-    <td rowspan="2" style="width: 20%; padding: 10px;">DPyD<br>Versión 1:<br>Enero, 2020</td>
+    <td rowspan="2" style="width: 20%; padding: 10px;">DPyD<br>Versión 1:<br>Julio 2026</td>
   </tr>
   <tr>
     <td style="font-weight: bold; padding: 10px;">MANUAL DE POLÍTICAS Y PROCEDIMIENTOS</td>

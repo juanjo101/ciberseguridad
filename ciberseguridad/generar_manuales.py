@@ -39,7 +39,7 @@ def generate_markdown(filename, data):
   <tr>
     <td rowspan="2" style="width: 20%; padding: 10px;"><img src="/logo-bnphu.png" style="width: 120px;" /></td>
     <td style="font-weight: bold; width: 60%; padding: 10px; font-size: 1.1em;">BIBLIOTECA NACIONAL PEDRO HENRÍQUEZ UREÑA</td>
-    <td rowspan="2" style="width: 20%; padding: 10px;">DPyD<br>Versión 1:<br>Enero, 2020</td>
+    <td rowspan="2" style="width: 20%; padding: 10px;">DPyD<br>Versión 1:<br>Julio 2026</td>
   </tr>
   <tr>
     <td style="font-weight: bold; padding: 10px;">MANUAL DE POLÍTICAS Y PROCEDIMIENTOS</td>
@@ -146,7 +146,7 @@ def create_procedure(filename_docx, filename_md, data):
     e = header_table.cell(0, 2)
     f = header_table.cell(1, 2)
     e.merge(f)
-    e.text = "DPyD\nVersión 1:\nEnero, 2020"
+    e.text = "DPyD\nVersión 1:\nJulio 2026"
     e.paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
     
     # Set explicit column widths for header table
