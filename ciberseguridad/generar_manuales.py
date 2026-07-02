@@ -86,8 +86,14 @@ def create_procedure(filename_docx, filename_md, data):
     a = header_table.cell(0, 0)
     b = header_table.cell(1, 0)
     a.merge(b)
-    a.text = "BNPHU"
-    a.paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
+    a.text = ""
+    p = a.paragraphs[0]
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    run = p.add_run()
+    if os.path.exists("logo-bnphu.png"):
+        run.add_picture("logo-bnphu.png", width=Inches(1.2))
+    else:
+        run.add_text("BNPHU")
     
     c = header_table.cell(0, 1)
     c.text = "BIBLIOTECA NACIONAL PEDRO HENRÍQUEZ UREÑA"
