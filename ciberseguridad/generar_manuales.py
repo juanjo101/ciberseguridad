@@ -3,8 +3,14 @@ from docx import Document
 from docx.shared import Pt, Inches, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml.ns import nsdecls
-from docx.oxml import parse_xml
+from docx.oxml import parse_xml, OxmlElement
+from docx.oxml.ns import qn
 
+def set_cell_background(cell, fill):
+    tcPr = cell._tc.get_or_add_tcPr()
+    shd = OxmlElement('w:shd')
+    shd.set(qn('w:fill'), fill)
+    tcPr.append(shd)
 DIRS = [
     "1-SASI",
     "2-Politicas_Seguridad",
@@ -121,93 +127,192 @@ def create_procedure(filename_docx, filename_md, data):
 
     doc.add_paragraph() 
     
-    main_table = doc.add_table(rows=0, cols=3)
+    main_table = doc.add_table(rows=0, cols=4)
     main_table.autofit = False
     main_table.allow_autofit = False
     
     def set_main_row_widths(r):
-        r.cells[0].width = Inches(2.5)
-        r.cells[1].width = Inches(3.0)
-        r.cells[2].width = Inches(2.0)
+        r.cells[0].width = Inches(2.2)
+        r.cells[1].width = Inches(2.2)
+        r.cells[2].width = Inches(1.5)
+        r.cells[3].width = Inches(1.6)
 
     main_table.style = 'Table Grid'
 
-    row = main_table.add_row()
-    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
-    row.cells[0].text = f"NOMBRE DEL PROCESO: {data['nombre']}"
-    row.cells[0].paragraphs[0].runs[0].bold = True
+    row0 = main_table.add_row()
+    set_main_row_widths(row0)
+    row0.cells[0].merge(row0.cells[1]).merge(row0.cells[2]).merge(row0.cells[3])
+    row0.cells[0].text = f"NOMBRE DEL PROCESO: {data['nombre']}"
+    row0.cells[0].paragraphs[0].runs[0].bold = True
+    set_cell_background(row0.cells[0], "DDEBF7")
+
+    row1 = main_table.add_row()
+    set_main_row_widths(row1)
+    
+    # Preparado por
+    p0 = row1.cells[0].paragraphs[0]
+    r0 = p0.add_run("Preparado por: ")
+    r0.bold = True
+    p0.add_run(data['preparado'])
+    set_cell_background(row1.cells[0], "DDEBF7")
+
+    # Aprobado por
+    p1 = row1.cells[1].paragraphs[0]
+    r1 = p1.add_run("Aprobado por: ")
+    r1.bold = True
+    p1.add_run(data['aprobado'])
+    set_cell_background(row1.cells[1], "DDEBF7")
+
+    # Código/Páginas
+    p2 = row1.cells[2].paragraphs[0]
+    r2 = p2.add_run("Código/\nPáginas:")
+    r2.bold = True
+    set_cell_background(row1.cells[2], "DDEBF7")
+    
+    # Código (BNPHU-TIC-...) and page number
+    p3 = row1.cells[3].paragraphs[0]
+    p3.add_run(data.get('codigo', 'BNPHU-TIC-00X') + "\n2")
+    set_cell_background(row1.cells[3], "DDEBF7")
+
+    row2 = main_table.add_row()
+    set_main_row_widths(row2)
+    row2.cells[0].merge(row2.cells[1]).merge(row2.cells[2]).merge(row2.cells[3])
+    row2.cells[0].text = f"1.0 Propósito o Misión:\n{data['proposito']}"
 
     row = main_table.add_row()
-    set_main_row_widths(row)
-    row.cells[0].text = f"Preparado por: {data['preparado']}"
-    row.cells[1].text = f"Aprobado por: {data['aprobado']}"
-    row.cells[2].text = f"Código/Páginas:\n{data.get('codigo', 'BNPHU-TIC-00X')}"
-
-    row = main_table.add_row()
-    set_main_row_widths(row)
-    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
-    row.cells[0].text = f"1.0 Propósito o Misión:\n{data['proposito']}"
-
-    row = main_table.add_row()
-    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
+    row.cells[0].merge(row.cells[1]).merge(row.cells[2]).merge(row.cells[3])
     row.cells[0].text = f"2.0 Alcance:\nEmpieza: {data['alcance_empieza']}\nIncluye: {data['alcance_incluye']}\nTermina: {data['alcance_termina']}"
 
     row = main_table.add_row()
-    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
+    row.cells[0].merge(row.cells[1]).merge(row.cells[2]).merge(row.cells[3])
     row.cells[0].text = "3.0 Dueño o responsables:\n" + "\n".join(data['responsables'])
 
     row = main_table.add_row()
-    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
+    row.cells[0].merge(row.cells[1]).merge(row.cells[2]).merge(row.cells[3])
     row.cells[0].text = "4.0 Documentos de referencia:\n" + "\n".join(data['referencias'])
 
     row = main_table.add_row()
-    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
+    row.cells[0].merge(row.cells[1]).merge(row.cells[2]).merge(row.cells[3])
     row.cells[0].text = "5.0 Políticas del Procedimiento:\n" + "\n".join(data['politicas'])
 
     row = main_table.add_row()
-    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
+    row.cells[0].merge(row.cells[1]).merge(row.cells[2]).merge(row.cells[3])
     p = row.cells[0].paragraphs[0]
     p.add_run("6.0 Descripción de las Actividades del Proceso:\n").bold = True
     
     act_table = row.cells[0].add_table(rows=1, cols=2)
     act_table.style = 'Table Grid'
-    act_table.cell(0,0).text = "Responsable"
-    act_table.cell(0,1).text = "Descripción"
+    
+    c0 = act_table.cell(0,0)
+    c0.text = "Responsable"
+    c0.paragraphs[0].runs[0].bold = True
+    c0.paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
+    set_cell_background(c0, "DDEBF7")
+    
+    c1 = act_table.cell(0,1)
+    c1.text = "Descripción"
+    c1.paragraphs[0].runs[0].bold = True
+    c1.paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
+    set_cell_background(c1, "DDEBF7")
+    
     for r, d in data['actividades']:
         r_row = act_table.add_row()
         r_row.cells[0].text = r
         r_row.cells[1].text = d
 
     row = main_table.add_row()
-    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
-    row.cells[0].text = "7.0 ANEXOS:\n" + "\n".join(data['anexos'])
+    row.cells[0].merge(row.cells[1]).merge(row.cells[2]).merge(row.cells[3])
+    
+    anexo_table = row.cells[0].add_table(rows=max(1, len(data['anexos'])), cols=4)
+    anexo_table.style = 'Table Grid'
+    
+    a_row0 = anexo_table.rows[0]
+    a_row0.cells[0].text = "7.0"
+    a_row0.cells[0].paragraphs[0].runs[0].bold = True
+    a_row0.cells[1].text = "ANEXOS"
+    a_row0.cells[1].paragraphs[0].runs[0].bold = True
+    
+    if len(data['anexos']) > 1:
+        # Merge first two columns down for all rows
+        for i in range(1, len(data['anexos'])):
+            a_row0.cells[0].merge(anexo_table.rows[i].cells[0])
+            a_row0.cells[1].merge(anexo_table.rows[i].cells[1])
+            
+    for i, anexo in enumerate(data['anexos']):
+        parts = anexo.split(' ', 1)
+        anexo_table.rows[i].cells[2].text = parts[0] if len(parts) > 0 else ""
+        anexo_table.rows[i].cells[3].text = parts[1] if len(parts) > 1 else ""
+        
+        # Adjust widths
+        anexo_table.rows[i].cells[0].width = Inches(0.5)
+        anexo_table.rows[i].cells[1].width = Inches(1.5)
+        anexo_table.rows[i].cells[2].width = Inches(0.5)
+        anexo_table.rows[i].cells[3].width = Inches(5.0)
 
     row = main_table.add_row()
-    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
-    p = row.cells[0].paragraphs[0]
-    p.add_run("8.0 REGISTROS:\n").bold = True
-    reg_table = row.cells[0].add_table(rows=1, cols=6)
+    row.cells[0].merge(row.cells[1]).merge(row.cells[2]).merge(row.cells[3])
+    
+    # Section 8
+    reg_table = row.cells[0].add_table(rows=2, cols=6)
     reg_table.style = 'Table Grid'
+    
+    # 8.0 REGISTROS row
+    r8_row0 = reg_table.rows[0]
+    r8_row0.cells[0].text = "8.0"
+    r8_row0.cells[0].paragraphs[0].runs[0].bold = True
+    r8_row0.cells[1].text = "REGISTROS:"
+    r8_row0.cells[1].paragraphs[0].runs[0].bold = True
+    r8_row0.cells[1].merge(r8_row0.cells[2]).merge(r8_row0.cells[3]).merge(r8_row0.cells[4]).merge(r8_row0.cells[5])
+    
+    # Headers row
     headers = ["CODIGO", "NOMBRE", "ALMACENAMIENTO", "ARCHIVADO", "TIEMPO", "DISPOSICION"]
     for i, h in enumerate(headers):
-        reg_table.cell(0,i).text = h
+        c = reg_table.cell(1,i)
+        c.text = h
+        c.paragraphs[0].runs[0].bold = True
 
     row = main_table.add_row()
-    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
-    p = row.cells[0].paragraphs[0]
-    p.add_run("9.0 Historia de Cambio:\n").bold = True
-    hist_table = row.cells[0].add_table(rows=1, cols=6)
+    row.cells[0].merge(row.cells[1]).merge(row.cells[2]).merge(row.cells[3])
+    
+    # Section 9
+    hist_table = row.cells[0].add_table(rows=2, cols=6)
     hist_table.style = 'Table Grid'
+    
+    # 9.0 Historia de Cambio row
+    r9_row0 = hist_table.rows[0]
+    r9_row0.cells[0].text = "9.0\nHistoria\nde Cambio"
+    r9_row0.cells[0].paragraphs[0].runs[0].bold = True
+    r9_row0.cells[0].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
+    r9_row0.cells[1].merge(r9_row0.cells[2]).merge(r9_row0.cells[3]).merge(r9_row0.cells[4]).merge(r9_row0.cells[5])
+    
+    # Headers row
     headers_hist = ["REVISIONES", "FECHAS", "SECCION", "DESCRIPCION", "REVISADO POR", "REFRENDADO POR"]
     for i, h in enumerate(headers_hist):
-        hist_table.cell(0,i).text = h
+        c = hist_table.cell(1,i)
+        c.text = h
+        c.paragraphs[0].runs[0].bold = True
+        c.paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
+        
+    # Blank row for history
+    hist_table.add_row()
 
     row = main_table.add_row()
-    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
-    row.cells[0].text = f"10.0 TIEMPO DE RESPUESTA: {data['tiempo']}"
+    row.cells[0].merge(row.cells[1]).merge(row.cells[2]).merge(row.cells[3])
+    
+    # Section 10
+    time_table = row.cells[0].add_table(rows=1, cols=3)
+    time_table.style = 'Table Grid'
+    time_table.cell(0,0).text = "10.0"
+    time_table.cell(0,0).paragraphs[0].runs[0].bold = True
+    time_table.cell(0,1).text = "TIEMPO DE\nRESPUESTA:"
+    time_table.cell(0,1).paragraphs[0].runs[0].bold = True
+    time_table.cell(0,2).text = data['tiempo']
+    time_table.cell(0,0).width = Inches(0.5)
+    time_table.cell(0,1).width = Inches(1.5)
+    time_table.cell(0,2).width = Inches(5.5)
 
     row = main_table.add_row()
-    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
+    row.cells[0].merge(row.cells[1]).merge(row.cells[2]).merge(row.cells[3])
     p = row.cells[0].paragraphs[0]
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p.add_run("FIN DEL PROCEDIMIENTO").bold = True
