@@ -1,7 +1,7 @@
 import './style.css'
 import { marked } from 'marked';
 
-let currentDoc = '/Procedimiento_SASI_BNPHU.md';
+let currentDoc = '/Dashboard.md';
 
 const documentView = document.getElementById('document-view');
 const menuLinks = document.querySelectorAll('#menu a');
@@ -16,6 +16,13 @@ async function loadDocument(docPath) {
     const text = await response.text();
     documentView.innerHTML = marked.parse(text);
     currentDoc = docPath;
+    
+    const actionsDiv = document.querySelector('.actions');
+    if (docPath === '/Dashboard.md') {
+      actionsDiv.style.display = 'none';
+    } else {
+      actionsDiv.style.display = 'flex';
+    }
   } catch (error) {
     documentView.innerHTML = '<div class="error">No se pudo cargar el documento.</div>';
   }
