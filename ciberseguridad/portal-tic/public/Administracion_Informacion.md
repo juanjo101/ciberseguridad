@@ -6,7 +6,7 @@
 
 **NOMBRE DEL PROCESO:** Políticas para la Administración y Tratamiento Seguro de la Información
 
-| Preparado por: Departamento de TIC | Aprobado por: Dirección Nacional | Fecha de emisión: Pendiente |
+| Preparado por: Departamento de TIC | Aprobado por: Dirección Nacional | Código/Páginas: BNPHU-TIC-002 |
 |---|---|---|
 
 **1.0 Propósito o Misión:**
@@ -66,3 +66,5 @@ Establecer las normativas relativas a las responsabilidades de los empleados fre
 | 1.0 | Actual | Todas | Creación oficial | Dpto. TIC | Dirección |
 
 **10.0 TIEMPO DE RESPUESTA:** Aplicación permanente. Procedimientos de restauración deben tomar máximo 24 horas.
+
+**FIN DEL PROCEDIMIENTO**

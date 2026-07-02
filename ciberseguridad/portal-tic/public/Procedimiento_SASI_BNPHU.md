@@ -6,7 +6,7 @@
 
 **NOMBRE DEL PROCESO:** Sistema para la Administración de la Seguridad de la Información (SASI)
 
-| Preparado por: Departamento de TIC | Aprobado por: Dirección Nacional | Fecha de emisión: Pendiente |
+| Preparado por: Departamento de TIC | Aprobado por: Dirección Nacional | Código/Páginas: BNPHU-TIC-001 |
 |---|---|---|
 
 **1.0 Propósito o Misión:**
@@ -67,3 +67,5 @@ Garantizar la protección de los activos de información de la BNPHU mediante la
 | 1.0 | Actual | Todas | Creación oficial | Dpto. TIC | Dirección |
 
 **10.0 TIEMPO DE RESPUESTA:** La revisión del SASI se realiza anualmente o ante cambios significativos.
+
+**FIN DEL PROCEDIMIENTO**

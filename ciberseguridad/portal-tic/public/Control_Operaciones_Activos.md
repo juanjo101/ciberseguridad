@@ -6,7 +6,7 @@
 
 **NOMBRE DEL PROCESO:** Control de Operaciones e Inventario (Web, WiFi, Móviles, Cloud)
 
-| Preparado por: Departamento de TIC | Aprobado por: Dirección Nacional | Fecha de emisión: Pendiente |
+| Preparado por: Departamento de TIC | Aprobado por: Dirección Nacional | Código/Páginas: BNPHU-TIC-006 |
 |---|---|---|
 
 **1.0 Propósito o Misión:**
@@ -59,3 +59,5 @@ Establecer las medidas de protección y control sobre las plataformas web, redes
 | 1.0 | Actual | Todas | Creación oficial | Dpto. TIC | Dirección |
 
 **10.0 TIEMPO DE RESPUESTA:** Monitoreo mensual de servicios. Actualización constante del inventario.
+
+**FIN DEL PROCEDIMIENTO**

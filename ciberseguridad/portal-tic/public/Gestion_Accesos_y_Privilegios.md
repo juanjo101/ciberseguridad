@@ -6,7 +6,7 @@
 
 **NOMBRE DEL PROCESO:** Administración y Control de Accesos
 
-| Preparado por: Departamento de TIC | Aprobado por: Dirección Nacional | Fecha de emisión: Pendiente |
+| Preparado por: Departamento de TIC | Aprobado por: Dirección Nacional | Código/Páginas: BNPHU-TIC-003 |
 |---|---|---|
 
 **1.0 Propósito o Misión:**
@@ -62,3 +62,5 @@ Prevenir accesos no autorizados a la información e infraestructuras, mediante l
 | 1.0 | Actual | Todas | Creación oficial | Dpto. TIC | Dirección |
 
 **10.0 TIEMPO DE RESPUESTA:** Altas y bajas en 24 horas. Auditoría de permisos anualmente.
+
+**FIN DEL PROCEDIMIENTO**

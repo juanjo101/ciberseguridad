@@ -6,7 +6,7 @@
 
 **NOMBRE DEL PROCESO:** Plan de Disponibilidad y Continuidad del Negocio (BCP / DRP)
 
-| Preparado por: Departamento de TIC | Aprobado por: Dirección Nacional | Fecha de emisión: Pendiente |
+| Preparado por: Departamento de TIC | Aprobado por: Dirección Nacional | Código/Páginas: BNPHU-TIC-004 |
 |---|---|---|
 
 **1.0 Propósito o Misión:**
@@ -59,3 +59,5 @@ Mantener las operaciones tecnológicas a un nivel aceptable frente a eventualida
 | 1.0 | Actual | Todas | Creación oficial | Dpto. TIC | Dirección |
 
 **10.0 TIEMPO DE RESPUESTA:** Ejecución inmediata. Tiempos de recuperación varían según el RTO del proceso.
+
+**FIN DEL PROCEDIMIENTO**

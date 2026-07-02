@@ -6,7 +6,7 @@
 
 **NOMBRE DEL PROCESO:** Metodología y Gestión de Riesgos de Ciberseguridad
 
-| Preparado por: Departamento de TIC | Aprobado por: Dirección Nacional | Fecha de emisión: Pendiente |
+| Preparado por: Departamento de TIC | Aprobado por: Dirección Nacional | Código/Páginas: BNPHU-TIC-005 |
 |---|---|---|
 
 **1.0 Propósito o Misión:**
@@ -59,3 +59,5 @@ Definir un enfoque estructurado para identificar, analizar, evaluar y tratar los
 | 1.0 | Actual | Todas | Creación oficial | Dpto. TIC | Dirección |
 
 **10.0 TIEMPO DE RESPUESTA:** Evaluación anual o al existir cambios estructurales.
+
+**FIN DEL PROCEDIMIENTO**

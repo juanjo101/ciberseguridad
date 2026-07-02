@@ -31,7 +31,7 @@ def add_border(table):
 def generate_markdown(filename, data):
     md = f"# BIBLIOTECA NACIONAL PEDRO HENRÍQUEZ UREÑA\n**DPyD | Versión 1**\n**MANUAL DE POLÍTICAS Y PROCEDIMIENTOS**\n\n---\n\n"
     md += f"**NOMBRE DEL PROCESO:** {data['nombre']}\n\n"
-    md += f"| Preparado por: {data['preparado']} | Aprobado por: {data['aprobado']} | Fecha de emisión: Pendiente |\n|---|---|---|\n\n"
+    md += f"| Preparado por: {data['preparado']} | Aprobado por: {data['aprobado']} | Código/Páginas: {data.get('codigo', 'BNPHU-TIC-00X')} |\n|---|---|---|\n\n"
     md += f"**1.0 Propósito o Misión:**\n{data['proposito']}\n\n"
     md += f"**2.0 Alcance:**\n- **Empieza:** {data['alcance_empieza']}\n- **Incluye:** {data['alcance_incluye']}\n- **Termina:** {data['alcance_termina']}\n\n"
     
@@ -67,7 +67,8 @@ def generate_markdown(filename, data):
     md += "**9.0 Historia de Cambio:**\n| REVISIONES | FECHAS | SECCION | DESCRIPCION | REVISADO POR | REFRENDADO POR |\n|---|---|---|---|---|---|\n"
     md += "| 1.0 | Actual | Todas | Creación oficial | Dpto. TIC | Dirección |\n\n"
     
-    md += f"**10.0 TIEMPO DE RESPUESTA:** {data['tiempo']}\n"
+    md += f"**10.0 TIEMPO DE RESPUESTA:** {data['tiempo']}\n\n"
+    md += "**FIN DEL PROCEDIMIENTO**\n"
     
     with open(filename, 'w', encoding='utf-8') as f:
         f.write(md)
@@ -106,40 +107,41 @@ def create_procedure(filename_docx, filename_md, data):
 
     doc.add_paragraph() 
 
-    main_table = doc.add_table(rows=0, cols=2)
+    main_table = doc.add_table(rows=0, cols=3)
     main_table.style = 'Table Grid'
 
     row = main_table.add_row()
-    row.cells[0].merge(row.cells[1])
+    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
     row.cells[0].text = f"NOMBRE DEL PROCESO: {data['nombre']}"
     row.cells[0].paragraphs[0].runs[0].bold = True
 
     row = main_table.add_row()
     row.cells[0].text = f"Preparado por: {data['preparado']}"
-    row.cells[1].text = f"Aprobado por: {data['aprobado']}\nFecha de emisión: Pendiente"
+    row.cells[1].text = f"Aprobado por: {data['aprobado']}"
+    row.cells[2].text = f"Código/Páginas: {data.get('codigo', 'BNPHU-TIC-00X')}"
 
     row = main_table.add_row()
-    row.cells[0].merge(row.cells[1])
+    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
     row.cells[0].text = f"1.0 Propósito o Misión:\n{data['proposito']}"
 
     row = main_table.add_row()
-    row.cells[0].merge(row.cells[1])
+    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
     row.cells[0].text = f"2.0 Alcance:\nEmpieza: {data['alcance_empieza']}\nIncluye: {data['alcance_incluye']}\nTermina: {data['alcance_termina']}"
 
     row = main_table.add_row()
-    row.cells[0].merge(row.cells[1])
+    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
     row.cells[0].text = "3.0 Dueño o responsables:\n" + "\n".join(data['responsables'])
 
     row = main_table.add_row()
-    row.cells[0].merge(row.cells[1])
+    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
     row.cells[0].text = "4.0 Documentos de referencia:\n" + "\n".join(data['referencias'])
 
     row = main_table.add_row()
-    row.cells[0].merge(row.cells[1])
+    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
     row.cells[0].text = "5.0 Políticas del Procedimiento:\n" + "\n".join(data['politicas'])
 
     row = main_table.add_row()
-    row.cells[0].merge(row.cells[1])
+    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
     p = row.cells[0].paragraphs[0]
     p.add_run("6.0 Descripción de las Actividades del Proceso:\n").bold = True
     
@@ -153,11 +155,11 @@ def create_procedure(filename_docx, filename_md, data):
         r_row.cells[1].text = d
 
     row = main_table.add_row()
-    row.cells[0].merge(row.cells[1])
+    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
     row.cells[0].text = "7.0 ANEXOS:\n" + "\n".join(data['anexos'])
 
     row = main_table.add_row()
-    row.cells[0].merge(row.cells[1])
+    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
     p = row.cells[0].paragraphs[0]
     p.add_run("8.0 REGISTROS:\n").bold = True
     reg_table = row.cells[0].add_table(rows=1, cols=6)
@@ -167,7 +169,7 @@ def create_procedure(filename_docx, filename_md, data):
         reg_table.cell(0,i).text = h
 
     row = main_table.add_row()
-    row.cells[0].merge(row.cells[1])
+    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
     p = row.cells[0].paragraphs[0]
     p.add_run("9.0 Historia de Cambio:\n").bold = True
     hist_table = row.cells[0].add_table(rows=1, cols=6)
@@ -177,8 +179,14 @@ def create_procedure(filename_docx, filename_md, data):
         hist_table.cell(0,i).text = h
 
     row = main_table.add_row()
-    row.cells[0].merge(row.cells[1])
+    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
     row.cells[0].text = f"10.0 TIEMPO DE RESPUESTA: {data['tiempo']}"
+
+    row = main_table.add_row()
+    row.cells[0].merge(row.cells[1]).merge(row.cells[2])
+    p = row.cells[0].paragraphs[0]
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p.add_run("FIN DEL PROCEDIMIENTO").bold = True
 
     add_border(header_table)
     add_border(main_table)
@@ -190,6 +198,7 @@ def create_procedure(filename_docx, filename_md, data):
 
 sasi_data = {
     "nombre": "Sistema para la Administración de la Seguridad de la Información (SASI)",
+    "codigo": "BNPHU-TIC-001",
     "preparado": "Departamento de TIC",
     "aprobado": "Dirección Nacional",
     "proposito": "Garantizar la protección de los activos de información de la BNPHU mediante la implementación estructurada y continua de políticas y directrices que aseguren la confidencialidad, integridad y disponibilidad, alineados con el marco NORTIC A7 y el modelo NIST CSF.",
@@ -219,6 +228,7 @@ sasi_data = {
 
 admin_info_data = {
     "nombre": "Políticas para la Administración y Tratamiento Seguro de la Información",
+    "codigo": "BNPHU-TIC-002",
     "preparado": "Departamento de TIC",
     "aprobado": "Dirección Nacional",
     "proposito": "Establecer las normativas relativas a las responsabilidades de los empleados frente a la información institucional, su correcta clasificación, almacenamiento, retención, respaldo, recuperación y eliminación definitiva.",
@@ -248,6 +258,7 @@ admin_info_data = {
 
 acceso_data = {
     "nombre": "Administración y Control de Accesos",
+    "codigo": "BNPHU-TIC-003",
     "preparado": "Departamento de TIC",
     "aprobado": "Dirección Nacional",
     "proposito": "Prevenir accesos no autorizados a la información e infraestructuras, mediante la gestión rigurosa de privilegios lógicos y controles físicos basados en el principio de necesidad de saber.",
@@ -275,6 +286,7 @@ acceso_data = {
 
 continuidad_data = {
     "nombre": "Plan de Disponibilidad y Continuidad del Negocio (BCP / DRP)",
+    "codigo": "BNPHU-TIC-004",
     "preparado": "Departamento de TIC",
     "aprobado": "Dirección Nacional",
     "proposito": "Mantener las operaciones tecnológicas a un nivel aceptable frente a eventualidades o desastres, estableciendo un protocolo de gestión de incidentes y un esquema de recuperación técnica.",
@@ -303,6 +315,7 @@ continuidad_data = {
 
 riesgos_data = {
     "nombre": "Metodología y Gestión de Riesgos de Ciberseguridad",
+    "codigo": "BNPHU-TIC-005",
     "preparado": "Departamento de TIC",
     "aprobado": "Dirección Nacional",
     "proposito": "Definir un enfoque estructurado para identificar, analizar, evaluar y tratar los riesgos tecnológicos, garantizando que estén bajo umbrales aceptables para la BNPHU.",
@@ -331,6 +344,7 @@ riesgos_data = {
 
 operaciones_data = {
     "nombre": "Control de Operaciones e Inventario (Web, WiFi, Móviles, Cloud)",
+    "codigo": "BNPHU-TIC-006",
     "preparado": "Departamento de TIC",
     "aprobado": "Dirección Nacional",
     "proposito": "Establecer las medidas de protección y control sobre las plataformas web, redes inalámbricas, dispositivos móviles corporativos, adopción de la nube y mantener un registro fiel de los activos de la institución.",
