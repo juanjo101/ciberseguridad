@@ -1,0 +1,9 @@
+src/themes/        custome    /app/home-page/home-news/home-news.component.html
+
+
+customization del viernes era una funcion en este archivo::  La variable que supone ser ${themeName} fue encontrada como ${custome}
+src/app/home-page/home-news/themed-home-news.component.ts
+
+ protected importThemedComponent(themeName: string): Promise<any> {
+    return import(`../../../themes/${themeName}/app/home-page/home-news/home-news.component`);
+  }

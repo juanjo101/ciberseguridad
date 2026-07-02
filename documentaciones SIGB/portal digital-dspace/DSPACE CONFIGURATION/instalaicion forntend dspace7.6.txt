@@ -1,0 +1,51 @@
+  141  sudo apt install curl
+  142  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+  147  source ~/.nvm/nvm.sh
+  148  nvm install 18
+  149  node -v
+  150  npm -v
+  151  sudo apt install npm
+sudo npm install --global yarn
+
+wget https://github.com/DSpace/dspace-angular/archive/refs/tags/dspace-7.6.tar.gz
+
+cd dspace-angular-dspace-7.6/
+yarn install
+
+yarn build:prod
+
+
+mkdir /home/bnphuser/dspace7.6deploy
+desde el /home/bnphuser/
+cp -R dspace-angular-dspace-7.5/dist/ /dspace-7-angular/
+cp dspace-angular-dspace-7.5/config/config.example.yml /dspace7.6deploy/config/config.prod.yml
+
+luego editamos la ruta del api y cambiamos "localhost" por la ip  de nuestra maquina
+ rest:
+  ssl: false
+  host: (ip de mi maquina )localhost
+  port: 8080
+  nameSpace: /server
+
+
+
+luego creamos un documanto en nusetra carpeta dspace7.6deploy/
+ se llamara dspace-ui.json
+{
+    "apps": [
+        {
+           "name": "dspace-ui",
+           "cwd": "/home/bn",
+           "script": "dist/server/main.js",
+           "env": {
+              "NODE_ENV": "production"
+           }
+        }
+    ]
+}
+sudo npm install --global pm2
+
+
+como ultimo paso *****
+pm2 start dspace-ui.json
+

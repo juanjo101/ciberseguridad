@@ -1,0 +1,70 @@
+ 2015  sudo nano /etc/systemd/system/tomcat9.service
+ 2016  sudo systemctl daemon-reload
+ 2017  sudo systemctl enable tomcat9
+ 2018  sudo systemctl start tomcat9
+ 2019  sudo systemctl restart tomcat9
+ 2020  sudo systemctl status tomcat9
+ 2021  sudo ./shutdown.sh
+ 2022  sudo systemctl start tomcat9
+ 2023  sudo systemctl stop tomcat9
+ 2024  sudo vim /etc/systemd/system/tomcat9.service
+ 2025  sudo chown -R tomcat:tomcat /opt/tomcat9
+ 2026  sudo groupadd tomcat
+ 2027  sudo useradd -s /bin/false -g tomcat -d /opt/tomcat9 tomcat
+ 2028  sudo chown -R tomcat:tomcat /opt/tomcat9
+ 2029  sudo systemctl daemon-reload
+ 2030  sudo systemctl start tomcat9
+ 2031  sudo systemctl status tomcat9
+ 2032  sudo tail -n 50 /opt/tomcat9/logs/catalina.out
+ 2033  sudo chmod +x /opt/tomcat9/bin/startup.sh
+ 2034  sudo chmod +x /opt/tomcat9/bin/shutdown.sh
+ 2035  sudo systemctl start tomcat9
+ 2036  sudo systemctl stop tomcat9
+ 2037  sudo systemctl stap tomcat9
+ 2038  sudo systemctl start tomcat9
+ 2039  sudo netstat -tuln | grep 8005
+ 2040  sudo netstat -tuln | grep 8080
+ 2041  sudo lsof -i :8005
+ 2042  sudo nano /opt/tomcat9/conf/server.xml
+ 2043  sudo cat /opt/tomcat9/conf/server.xml
+ 2044  sudo lsof -i :8005
+ 2045  sudo lsof -i :8080
+ 2046  sudo lsof -i :8443
+ 2047  sudo lsof -i :8009
+ 2048  sudo service apache2 stop
+ 2049  sudo systemctl start tomcat9
+ 2050  sudo lsof -i :8009
+ 2051  sudo lsof -i :8080
+ 2052  sudo systemctl daemon-reload
+ 2053  sudo systemctl start tomcat9
+ 2054  sudo systemctl status tomcat9
+ 2055  sudo chown -R tomcat:tomcat /opt/tomcat9
+ 2056  sudo chmod -R 755 /opt/tomcat9
+ 2057  sudo systemctl status tomcat9
+ 2058  sudo journalctl -xeu tomcat9.service
+ 2059  sudo vim /etc/systemd/system/tomcat9.service
+ 2060  sudo systemctl daemon-reload
+ 2061  sudo systemctl start tomcat9
+ 2062  sudo systemctl status tomcat9
+ 2063  sudo service apache2 start
+ 2064  cd ..
+ 2065  ls
+ 2066  cd /dspace/
+ 2067  ls
+ 2068  locate server.xml
+ 2069  sudo vim /opt/tomcat9/conf/server.xml
+ 2070  sudo cat /opt/tomcat9/conf/server.xml
+ 2071  openssl pkcs12 -export -in /etc/letsencrypt/live/bd.bnphu.gob.do/fullchain.pem                 -inkey /etc/letsencrypt/live/bd.bnphu.gob.do/privkey.pem                 -out /etc/ssl/bd_bnphu.p12                 -name tomcat -CAfile /etc/letsencrypt/live/bd.bnphu.gob.do/chain.pem                 -caname root
+ 2072  keytool -importkeystore -deststorepass Biblioteca21-destkeypass changeit -destkeystore /etc/ssl/dspace_keystore.jks         -srckeystore /etc/ssl/bd_bnphu.p12 -srcstoretype PKCS12 -srcstorepass Biblioteca21 -alias tomcat
+ 2073  keytool -importkeystore -deststorepass Biblioteca21 -destkeypass changeit -destkeystore /etc/ssl/dspace_keystore.jks         -srckeystore /etc/ssl/bd_bnphu.p12 -srcstoretype PKCS12 -srcstorepass Biblioteca21 -alias tomcat
+ 2074  ls /etc/ssl/bd_bnphu.p12
+ 2075  openssl pkcs12 -export -in /etc/letsencrypt/live/bd.bnphu.gob.do/fullchain.pem                 -inkey /etc/letsencrypt/live/bd.bnphu.gob.do/privkey.pem                 -out /etc/ssl/bd_bnphu.p12                 -name tomcat -CAfile /etc/letsencrypt/live/bd.bnphu.gob.do/chain.pem                 -caname root
+ 2076  sudo openssl pkcs12 -export -in /etc/letsencrypt/live/bd.bnphu.gob.do/fullchain.pem                 -inkey /etc/letsencrypt/live/bd.bnphu.gob.do/privkey.pem                 -out /etc/ssl/bd_bnphu.p12                 -name tomcat -CAfile /etc/letsencrypt/live/bd.bnphu.gob.do/chain.pem                 -caname root
+ 2077  keytool -importkeystore -deststorepass Biblioteca21 -destkeystore /etc/ssl/dspace_keystore.jks         -srckeystore /etc/ssl/bd_bnphu.p12 -srcstoretype PKCS12 -srcstorepass Biblioteca21 -alias tomcat
+ 2078  sudo keytool -importkeystore -deststorepass Biblioteca21 -destkeystore /etc/ssl/dspace_keystore.jks         -srckeystore /etc/ssl/bd_bnphu.p12 -srcstoretype PKCS12 -srcstorepass Biblioteca21 -alias tomcat
+ 2079  whoami
+ 2080  id -G
+ 2081  sudo chown bnphuser:bnphuser /etc/ssl/bd_bnphu.p12
+ 2082  sudo chmod 600 /etc/ssl/bd_bnphu.p12
+ 2083  sudo systemctl status tomcat9
+ 2084  history

@@ -1,0 +1,11 @@
+node_modules/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+
+# Ignorando archivos grandes y credenciales (evitar Push Protection de GitHub)
+documentaciones SIGB/Sistema de catalogacion koha/troubleshooting-howtoincidentes/mail.server=smtp.office365.com1.txt
+documentaciones SIGB/portal digital-dspace/DSPACE CONFIGURATION/mail.server =  auth2 smtp.office365.com.txt
+Evaluacion Web BNPHU.rtf
+documentaciones SIGB/portal digital-dspace/DSPACE CONFIGURATION/DSpace-Manual.pdf

@@ -1,0 +1,6 @@
+ejemplo de extraction del campo 040 subcampo a: 
+	ExtractValue(metadata,'//datafield[@tag="040"]/subfield[@code="a"]') 
+
+Estas extracciones se encuentran en la tabla "biblio_metadata" de nuestra base de datos
+	entonces de cada SELECT * FROM biblio_metadata
+

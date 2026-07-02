@@ -1,0 +1,27 @@
+ 
+
+------------------------------------------------
+Logs de usuarios koha
+------------------------------------------------
+SELECT concat(p.firstname, ' ', p.surname) 'Nombre',p.cardnumber 'Número de carnet',a.action'Action',a.timestamp'Time',a.object 'Record No',a.info 'Descripción'
+
+FROM action_logs a
+LEFT JOIN borrowers p ON (a.user=p.borrowernumber)
+LEFT JOIN items c ON (a.info=c.itemnumber)
+LEFT JOIN biblio d ON (c.biblionumber=d.biblionumber)
+LEFT JOIN borrowers k ON (a.object=k.borrowernumber)
+where  p.cardnumber like <<numero de carnet>> AND a.timestamp BETWEEN <<Desde fecha |date>> AND <<Hasta fecha|date>> AND a.module='CATALOGUING'
+---------------------------------------------------
+Extraccion de registro con el 040 $a
+---------------------------------------------
+select bi.biblionumber from biblio bi
+left join biblio_metadata bm on (bi.biblionumber=bm.biblionumber)
+
+where ExtractValue(metadata,'//datafield[@tag="040"]/subfield[@code="a"]') !='DO-SdBNP'
+limit 2000
+-----------------------------------------------------
+select bi.biblionumber, barcode, itemnotes_nonpublic, ExtractValue(metadata,'//datafield[@tag="082"]/subfield[@code="a"]') 
+as "082",ExtractValue(metadata,'//datafield[@tag="092"]/subfield[@code="a"]') as "092", itemcallnumber from biblio bi
+left join biblio_metadata bm on (bi.biblionumber=bm.biblionumber)
+left join items it on (it.biblionumber=bi.biblionumber)
+where itemcallnumber is null

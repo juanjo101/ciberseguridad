@@ -1,0 +1,49 @@
+
+
+
+#<VirtualHost *:80>
+#    ServerName bd.bnphu.gob.do
+#    #Redirect Permanent / https://bd.bnphu.bnphu.gob.do/
+#    ProxyRequests Off
+#    <Location />
+#        ProxyPass https://bd.bnphu.gob.do:4000/
+#        ProxyPassReverse https://bd.bnphu.gob.do:4000/
+#    </Location>
+#    <Location /server>
+#        ProxyPass https://bd.bnphu.gob.do:8080/
+#        ProxyPassReverse https://bd.bnphu.gob.do:8080/
+#    </Location>
+#    ErrorLog ${APACHE_LOG_DIR}/dspace_error.log
+#    CustomLog ${APACHE_LOG_DIR}/dspace_access.log combined
+#RewriteEngine off
+#RewriteCond %{SERVER_NAME} =bd.bnphu.gob.do
+#RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,NE,R=permanent]
+#</VirtualHost>
+
+#<VirtualHost *:443>
+#       ServerName bd.bnphu.god.do
+#       LogLevel warn
+#       ErrorLog ${APACHE_LOG_DIR}/bd.bnphu.gob.do.error.log
+#       CustomLog ${APACHE_LOG_DIR}/bd.bnphu.gob.do.access.log combined
+#       ProxyRequests off
+##       SSLEngine on
+##      SSLProxyEngine on
+##       SSLCertificateFile /dspace/ssl/Certificate.crt
+##      SSLCertificateKeyFile /dspace/ssl/Privatekey.key
+##       SSLCompression off
+##       SSLProtocol all -SSLv3 -TLSv1 -TLSv1.1
+##       SSLHonorCipherOrder off
+##       SSLSessionTickets off
+##       ProxyPreserveHost on
+##       RequestHeader set X-Forwarded-Proto https
+#
+#     <Proxy>
+#         AddDefaultCharset Off
+#         Require all granted
+#     </Proxy>
+#
+#       ProxyPass /server http://bd.bnphu.gob.do:8080/server
+#       ProxyPassReverse /server http://bd.bnphu.gob.do:8080/server
+#       ProxyPass / http://bd.bnphu.gob.do:4000/
+#       ProxyPassReverse / http://bd.bnphu.gob.do:4000/
+#</VirtualHost>

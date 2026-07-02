@@ -1,0 +1,16 @@
+SELECT 
+CONCAT('<a href=\"/cgi-bin/koha/authorities/detail.pl?authid=', authid, '\">',authid, '</a>') AS "No.de autoridad",
+datecreated as fecha_creado, modification_time as modificado_el, authtypecode as Tipo_Encabezamiento, concat(
+ExtractValue(marcxml,'//datafield[@tag="100"]/*'), -- PERSO_NAME
+ExtractValue(marcxml,'//datafield[@tag="110"]/*'), -- CORPO_NAME
+ExtractValue(marcxml,'//datafield[@tag="111"]/*'), -- MEETI_NAME
+ExtractValue(marcxml,'//datafield[@tag="130"]/*'), -- UNIF_TITLE
+ExtractValue(marcxml,'//datafield[@tag="148"]/*'), -- CHRON_TERM
+ExtractValue(marcxml,'//datafield[@tag="150"]/*'), -- TOPIC_TERM
+ExtractValue(marcxml,'//datafield[@tag="151"]/*'), -- GEOGR_NAME
+ExtractValue(marcxml,'//datafield[@tag="155"]/*')  -- GENRE/FORM
+) as Ecabezamiento_Principal
+FROM auth_header
+WHERE (modification_time BETWEEN <<Fecha Inicio|date>> AND  <<Fecha Final|date>>)
+AND (modification_time NOT LIKE CONCAT(datecreated,"%"))
+ORDER BY datecreated, authtypecode

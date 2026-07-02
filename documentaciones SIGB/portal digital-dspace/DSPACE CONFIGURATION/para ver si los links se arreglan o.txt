@@ -1,0 +1,12 @@
+para ver si los links se arreglan oai pmh
+
+ sudo mv /var/solr/data/oai /opt/
+ sudo rm -r /var/solr/data/statistics
+ sudo rm -r /var/solr/data/searh
+ sudo rm -r /var/solr/data/authority
+
+ sudo cp -r -f /dp/solr/* /var/solr/data
+ sudo chown solr:solr -R /var/solr/data
+
+ sudo service solr restart
+ sudo /dp/bin/dspace oai import -c

@@ -1,0 +1,31 @@
+bnphuser@dspace:~$ sudo certbot --apache
+[sudo] password for bnphuser:
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+
+Which names would you like to activate HTTPS for?
+We recommend selecting either all domains, or all domains in a VirtualHost/server block.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+1: bd.bnphu.gob.do
+2: bd.bnphu.god.do
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Select the appropriate numbers separated by commas and/or spaces, or leave input
+blank to select all options shown (Enter 'c' to cancel): 1
+Requesting a certificate for bd.bnphu.gob.do
+
+Successfully received certificate.
+Certificate is saved at: /etc/letsencrypt/live/bd.bnphu.gob.do/fullchain.pem
+Key is saved at:         /etc/letsencrypt/live/bd.bnphu.gob.do/privkey.pem
+This certificate expires on 2024-10-21.
+These files will be updated when the certificate renews.
+Certbot has set up a scheduled task to automatically renew this certificate in the background.
+
+Deploying certificate
+Successfully deployed certificate for bd.bnphu.gob.do to /etc/apache2/sites-available/bd.bnphu.gob.do-le-ssl.conf
+Congratulations! You have successfully enabled HTTPS on https://bd.bnphu.gob.do
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+If you like Certbot, please consider supporting our work by:
+ * Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+ * Donating to EFF:                    https://eff.org/donate-le
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+bnphuser@dspace:~$

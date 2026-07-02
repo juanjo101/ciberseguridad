@@ -1,0 +1,31 @@
+SELECT
+barcode,
+dateaccessioned,
+itemnotes_nonpublic,
+CONCAT (b.title,"***", b.author),
+itemnumber
+FROM items i
+JOIN biblio b  ON b.biblionumber = i.biblionumber 
+WHERE itemnotes_nonpublic LIKE "%2024%" 
+
+---------------------------------------------------
+SELECT 
+b.biblionumber,
+ExtractValue(metadata,'//datafield[@tag="590"]/subfield[@code="a"]') as "nota_nopublica590",
+b.title, b.author
+FROM biblio b 
+JOIN biblio_metadata bm ON (b.biblionumber=bm.biblionumber)
+WHERE ExtractValue(metadata,'//datafield[@tag="590"]/subfield[@code="a"]') LIKE "%2025%" AND
+(ExtractValue(metadata,'//datafield[@tag="590"]/subfield[@code="a"]') LIKE "%inventariado%" OR
+ ExtractValue(metadata,'//datafield[@tag="590"]/subfield[@code="a"]') LIKE "%Inventariado%")
+
+----------------------------------------------------- (registros con faltas ortograficas)
+SELECT 
+b.biblionumber,
+ExtractValue(metadata,'//datafield[@tag="590"]/subfield[@code="a"]') as "nota_nopublica590",
+b.title, b.author
+FROM biblio b 
+JOIN biblio_metadata bm ON (b.biblionumber=bm.biblionumber)
+WHERE ExtractValue(metadata,'//datafield[@tag="590"]/subfield[@code="a"]') LIKE "%2025%" AND
+(ExtractValue(metadata,'//datafield[@tag="590"]/subfield[@code="a"]') LIKE "%inventariado%" OR
+ ExtractValue(metadata,'//datafield[@tag="590"]/subfield[@code="a"]') LIKE "%Inventariado%")

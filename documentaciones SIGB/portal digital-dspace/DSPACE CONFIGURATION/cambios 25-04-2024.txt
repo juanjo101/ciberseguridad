@@ -1,0 +1,42 @@
+otextos editados
+
+Sustituyendo la ip por el nombre de dominio biblioteca.bnphu.gob.do
+config/config.yml
+local.cfg en las carpertas de  dspace angular dspace 7.6 / config/ y en la carpeta /dspace/config
+ejecute un yarn buiild para modificar la carpeta dist en el deploy
+luego de esto tengo que editar mi carpeta config.prod.yml en el deploy para que este coincida con mi localcfg
+
+
+de pues que config prod fue editado
+dspace7.6deploy/config/config.prod.ml fue editado el tomcat9 tuvo que ser reiniciado porque tiraba error 500
+
+
+
+dominio cambiado
+
+--------------------------------cambiando ls vista del homepage
+
+
+empezaremos con el home-news de la carpeta src/app (este es el tema base el cual estaremos usando para los cambios del dspace)
+\
+
+en intentos anteriores emplear nuevos temas personalizados collevo muchisimo trabajo
+
+
+por el momento solo editamos el archivo home_news.component.html
+y eager_themes.module.ts  y le quitamos em tme de dspace empleado por defecto a ver qu etal se ve
+
+
+no funciono al parecer por la configuracion de config.prod.yml
+
+asi que utilize la carpeta dspace para agregar mis modificaciones en la vista
+
+
+yarn build:prod && cp -r -f dist/* ../dspace7.7deploy/dist/
+en este caso se sustituyo el directorio de imageneres de dspace assets
+paras que las imagenes que cargue sean 
+
+
+editando el header.component.html
+0
+editando el css de; nav bar

@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrating FlowPaper with DSpace 7.6</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Integrating FlowPaper with DSpace 7.6</h1>
+    <p>This guide will help you integrate FlowPaper (formerly known as FlexPaper) into your DSpace 7.6 installation.</p>
+
+    <h2>Step 1: Download FlowPaper</h2>
+    <p>Go to the official <a href="https://flowpaper.com/download/">FlowPaper download page</a> and download the free version.</p>
+
+    <h2>Step 2: Deploy FlowPaper Files</h2>
+    <p>Extract the downloaded files to a location on your server:</p>
+    <pre><code>sudo mkdir -p /opt/flowpaper
+sudo tar -xzvf path/to/flowpaper_download.tar.gz -C /opt/flowpaper</code></pre>
+    <p>Move the files to a location accessible by the web server:</p>
+    <pre><code>sudo cp -r /opt/flowpaper /var/www/html/flowpaper</code></pre>
+
+    <h2>Step 3: Configure Apache to Serve FlowPaper</h2>
+    <p>Create an Apache configuration file for FlowPaper:</p>
+    <pre><code>sudo nano /etc/apache2/sites-available/flowpaper.conf</code></pre>
+    <p>Add the following configuration:</p>
+    <pre><code>&lt;VirtualHost *:80&gt;
+    ServerName flowpaper.yourdomain.com
+
+    DocumentRoot /var/www/html/flowpaper
+    &lt;Directory /var/www/html/flowpaper&gt;
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    &lt;/Directory&gt;
+
+    ErrorLog ${APACHE_LOG_DIR}/flowpaper_error.log
+    CustomLog ${APACHE_LOG_DIR}/flowpaper_access.log combined
+&lt;/VirtualHost&gt;</code></pre>
+    <p>Enable the site and restart Apache:</p>
+    <pre><code>sudo a2ensite flowpaper.conf
+sudo systemctl restart apache2</code></pre>
+
+    <h2>Step 4: Integrate FlowPaper with DSpace</h2>
+    <p>Modify the DSpace templates to use FlowPaper. Locate the templates in your DSpace installation:</p>
+    <pre><code>sudo nano /path/to/dspace-xmlui/src/main/webapp/themes/yourtheme/item-view.xsl</code></pre>
+    <p>Add the following code where you want to embed the FlowPaper viewer:</p>
+    <pre><code>&lt;iframe src="https://flowpaper.yourdomain.com/flowpaper.js" width="100%" height="600" style="border: none;"&gt;&lt;/iframe&gt;</code></pre>
+
+    <h2>Step 5: Test the Configuration</h2>
+    <p>Restart DSpace:</p>
+    <pre><code>sudo systemctl restart tomcat9</code></pre>
+    <p>Open a browser and navigate to an item in DSpace that contains a PDF file. The PDF should be rendered using FlowPaper.</p>
+</body>
+</html>

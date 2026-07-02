@@ -1,0 +1,17 @@
+Caso 1: disco lleno
+(para copiar)
+ cd /var/log/koha/
+
+	revisar el tamaño de las carpertas el size de este apartado es de 586GB
+	a veces se llena por completo y por el momento lo que podemos es borrar los logs, siempre y cuando haya un backup, para recuperar espacio
+ podemos borrar los archivos worker-output.log, 
+en las dos carperats de las intancias que son :
+ ls 
+	rnbp/
+	bnphu/
+
+(para copiar) 
+	sudo rm rnbp/worker-output.log
+	sudo rm bnphu/worker-output.log
+
+ego de haver eliminado 

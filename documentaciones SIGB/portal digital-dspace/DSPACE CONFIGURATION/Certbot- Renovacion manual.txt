@@ -1,0 +1,32 @@
+Luego de abrir el puerto 80:
+
+bnphuser@dspace:/etc/apache2/sites-available$ sudo a2dissite bd.bnphu.gob.do-le-ssl.conf
+
+bnphuser@dspace:/etc/apache2/sites-available$ sudo systemctl restart apache2
+
+bnphuser@dspace:/etc/apache2/sites-available$ sudo certbot certonly --manual -d bd.bnphu.gob.do
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Create a file containing just this data:
+
+2EYPLWjILkcYhvD9BBtp-1cfPuygxxoIiKFmm_BJxnc.tkdH2eb7Teh9YUSzZsyfzbWva1tE5XehduRKz91qEb0   
+
+And make it available on your web server at this URL:
+
+http://bd.bnphu.gob.do/.well-known/acme-challenge/2EYPLWjILkcYhvD9BBtp-1cfPuygxxoIiKFmm_BJxnc
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+bnphuser@dspace:/var/www/html/.well-known/acme-challenge/$
+-----------------------------En otra ventana creamos el archivo acme
+sudo su
+root@dspace:/var/www/html/.well-known/acme-challenge/# echo 2EYPLWjILkcYhvD9BBtp-1cfPuygxxoIiKFmm_BJxnc.tkdH2eb7Teh9YUSzZsyfzbWva1tE5XehduRKz91qEb0 > 2EYPLWjILkcYhvD9BBtp-1cfPuygxxoIiKFmm_BJxnc
+
+root@dspace:/var/www/html/.well-known/acme-challenge/$ chown www-data:www-data  2EYPLWjILkcYhvD9BBtp-1cfPuygxxoIiKFmm_BJxnc
+
+root@dspace:/var/www/html/.well-known/acme-challenge/$ chmod 755  2EYPLWjILkcYhvD9BBtp-1cfPuygxxoIiKFmm_BJxnc
+
+--------------------------------
+                                      
+Press Enter to Continue
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

@@ -1,0 +1,23 @@
+SELECT
+    al.object AS "RegistroBibliografico",
+    concat(p.firstname,' ',p.surname, '--', p.cardnumber) AS "Catalogador--No. Carnet",
+    al.action_id,
+    al.action,
+    al.timestamp as "fecha",
+    CONCAT('<a href=\"/cgi-bin/koha/catalogue/detail.pl?biblionumber=',b.biblionumber, '\">', b.title, '</a>' ) AS "Título ",
+    ExtractValue(bm.metadata, '//datafield[@tag="245"]/subfield[@code="b"]') AS "Subtítulo",
+    b.author AS 'Autor',
+    b.copyrightdate AS 'Año copyright',
+    al.info
+FROM action_logs al
+LEFT JOIN borrowers p ON  (al.user = p.borrowernumber)
+LEFT JOIN biblio b ON (al.object = b.biblionumber)
+LEFT JOIN biblioitems bi ON (al.object = bi.biblionumber)
+LEFT JOIN biblio_metadata bm ON (al.object = bm.biblionumber)
+WHERE al.module='CATALOGUING'
+    AND al.timestamp BETWEEN <<Between (yyyy-mm-dd)|date>> AND <<and (yyyy-mm-dd)|date>> 
+    AND al.info LIKE 'biblio%'
+    AND al.action LIKE << accion ADD o MODIFY>>
+    AND p.cardnumber LIKE <<Numero de carnet:>>
+ORDER BY al.action_id DESC
+

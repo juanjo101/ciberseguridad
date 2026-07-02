@@ -1,0 +1,46 @@
+ Configuration parameters
+Request a copy is enabled by default. 
+These configuration parameters in dspace.cfg relate to Request a Copy:
+
+Property:
+request.item.type = all
+
+Informational Note
+This parameter manages who can file a request for an item. 
+The parameter is optional. When it is empty or commented out, request a copy is disabled across the entire repository.
+ When set to all, any user can file a request for a copy. When set to logged, 
+only registered users can file a request for copy.
+
+Property:
+
+mail.helpdesk = bibliotecadigital@bnphu.gob.do
+request.item.helpdesk.override = true
+
+WARNING: This setting is only utilized if the RequestItemHelpdeskStrategy bean is enabled in 
+[dspace]/config/spring/api/requestitem.xml  
+
+Informational Note:
+The email address assigned to this parameter will receive the emails both for granting or 
+rejecting request a copy requests, as well as requests to change item policies.
+This parameter is optional. If it is empty or commented out, it will default to mail.admin.
+
+
+
+Property:
+request.item.helpdesk.override = true
+
+Informational Note	
+Should all Request Copy emails go to the mail.helpdesk instead of the item submitter? 
+Default is false, which sends Item Requests to the item submitter.
+
+WARNING: This setting is only utilized if the RequestItemHelpdeskStrategy 
+bean is enabled in [dspace]/config/spring/api/requestitem.xml (this must have the code below:)
+
+<!-- Change this alias to use "RequestItemHelpdeskStrategy" bean-->
+<alias alias='org.dspace.app.requestitem.RequestItemAuthorExtractor'
+       name='org.dspace.app.requestitem.RequestItemHelpdeskStrategy'/>
+ 
+<!-- Ensure the bean is uncommented (it should be by default) -->
+<bean class="org.dspace.app.requestitem.RequestItemHelpdeskStrategy"
+        id="org.dspace.app.requestitem.RequestItemHelpdeskStrategy"
+        autowireCandidate="true"/>

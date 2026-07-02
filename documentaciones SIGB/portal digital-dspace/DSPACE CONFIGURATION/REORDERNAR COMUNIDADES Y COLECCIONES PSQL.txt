@@ -1,0 +1,67 @@
+dspacedb=# select * from community2community;
+
+            parent_comm_id            |            child_comm_id
+--------------------------------------+--------------------------------------
+ c8f6017e-93b8-40ca-8f9e-5096ca481e0a | b07f43cc-3735-4bb4-9663-108b18fd078a
+ 9efbfca0-0ca2-42c6-a31f-159a83329b15 | 3d5c09e5-8f1c-4152-858e-4f48791127fe
+ 9efbfca0-0ca2-42c6-a31f-159a83329b15 | 99a853ca-e2d3-47b3-a602-389a73b6aad6
+ 9efbfca0-0ca2-42c6-a31f-159a83329b15 | 70a2b5d4-1d2d-4b9b-a621-5f7f8a1f1d85
+ 9efbfca0-0ca2-42c6-a31f-159a83329b15 | 252b25be-208c-42db-9511-aa6d2c19b5c8
+ 9efbfca0-0ca2-42c6-a31f-159a83329b15 | 2ae646d4-9c3a-4083-8c02-755da12c5960
+ 2ae646d4-9c3a-4083-8c02-755da12c5960 | 6d929f59-833c-417a-8751-4e13c1226afa
+ b2c362cb-f190-46b6-9c11-1883c1b12661 | b803007c-dea9-4681-8b59-7046f47b6e3c
+(8 rows)
+
+dspace=#  select * from community2collection;
+            collection_id             |             community_id
+--------------------------------------+--------------------------------------
+ 971793c2-fd10-43fd-aefc-b6c84e20fabd | b07f43cc-3735-4bb4-9663-108b18fd078a
+ 9cefc740-59a7-4450-992c-3646979b93e2 | b07f43cc-3735-4bb4-9663-108b18fd078a
+ f4eaa4c6-6ef4-4522-bdb8-a59e89c06f2d | bbbe9fcc-a0c9-4f26-88ef-5deaa8cf8a4e
+ 95846483-6813-4ca5-8a62-d478a5367e6f | bbbe9fcc-a0c9-4f26-88ef-5deaa8cf8a4e
+ 13fc69c9-614a-40ee-b336-273ed3e9b669 | 70a2b5d4-1d2d-4b9b-a621-5f7f8a1f1d85
+ a81122da-f02d-4c38-8ad2-ac6780e4d8b5 | 6d929f59-833c-417a-8751-4e13c1226afa
+ 5929e8ae-d517-49f9-a1cd-b361f8af6370 | 6d929f59-833c-417a-8751-4e13c1226afa
+ ab517a90-da1a-4c77-abe6-422c6bf5154b | 6d929f59-833c-417a-8751-4e13c1226afa
+ dd4c011a-4bd5-4878-aa4e-065c78fc198d | f0686875-3f53-425d-9ca6-824629976ef6
+ 0f00cbfa-2774-445d-b7f8-6c9e36206b80 | b2c362cb-f190-46b6-9c11-1883c1b12661
+ 9283b89d-06d8-4f55-b572-f5e6b1d10b1c | b803007c-dea9-4681-8b59-7046f47b6e3c
+ f19a3ee9-8ff4-46d8-8126-42c39e668b75 | f0686875-3f53-425d-9ca6-824629976ef6
+ 0251b6be-0175-48c2-a137-71608e37a235 | 70a2b5d4-1d2d-4b9b-a621-5f7f8a1f1d85
+ 03f6d987-00e3-4f5c-bf60-8711da2bae56 | bbbe9fcc-a0c9-4f26-88ef-5deaa8cf8a4e
+ 58da2b6e-8207-489b-8265-130656dfe38b | 4bc0c81a-e589-4b8d-91a6-4fa43a8b7963
+ 6524c687-045b-4a96-9559-9472c3786eab | 4bc0c81a-e589-4b8d-91a6-4fa43a8b7963
+ a572af99-371b-42af-9aef-fa0d904ba94d | 4bc0c81a-e589-4b8d-91a6-4fa43a8b7963
+ 923e78d9-6f53-4d10-b01e-e4dd2b6c69f1 | 4bc0c81a-e589-4b8d-91a6-4fa43a8b7963
+ 47dcda75-944d-404a-86cc-5a216e71115d | c8f6017e-93b8-40ca-8f9e-5096ca481e0a
+
+(19 rows)
+
+dspacedb=# select * from metadatavalue join community2collection on metadatavalue.dspace_object_id=community2collection.community_id  where dspace_object_id is not null;
+
+ metadata_value_id | metadata_field_id |                   text_value                    | text_lang | place | authority | confidence |           dspace_object_id
+-------------------+-------------------+-------------------------------------------------+-----------+-------+-----------+------------+--------------------------------------
+                54 |                34 | http://172.30.243.66:4000/handle/123456789/3751 |           |     0 |           |         -1 | 58f4cc21-5ef0-4c94-93cc-5218f054287e
+                55 |                73 | TOP-LVL2                                        |           |     0 |           |         -1 | 58f4cc21-5ef0-4c94-93cc-5218f054287e
+(2 rows)
+
+dspacedb=# select * from metadatavalue where dspace_object_id ='fb87053e-6051-42d2-ac0c-e8710391f872';
+ metadata_value_id | metadata_field_id |                   text_value                    | text_lang | place | authority | confidence |           dspace_object_id
+-------------------+-------------------+-------------------------------------------------+-----------+-------+-----------+------------+--------------------------------------
+                56 |                34 | http://172.30.243.66:4000/handle/123456789/3752 |           |     0 |           |         -1 | fb87053e-6051-42d2-ac0c-e8710391f872
+                57 |                73 | colecc2MOVE2                                    |           |     0 |           |         -1 | fb87053e-6051-42d2-ac0c-e8710391f872
+(2 rows)
+
+
+dspacedb=# UPDATE community2collection SET community_id= 'b2c362cb-f190-46b6-9c11-1883c1b12661' WHERE collection_id= '9283b89d-06d8-4f55-b572-f5e6b1d10b1c';
+UPDATE 1
+
+INSERT INTO community2community (parent_comm_id, child_comm_id) VALUES ('c8f6017e-93b8-40ca-8f9e-5096ca481e0a', 'bbbe9fcc-a0c9-4f26-88ef-5deaa8cf8a4e');
+
+dspace=# select * from metadatavalue join community2collection on metadatavalue.dspace_object_id=community2collection.collection_id  where dspace_object_id is not null;
+
+dspace=# select * from handle where resource_type_id != 2 and resource_id is not null;
+
+ASEGURESE DE  LUEGO DE ESOS CAMBIOS - REINDEXAR
+
+sudo /dspace/bin/dspace index-discovery

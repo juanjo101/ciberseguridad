@@ -1,0 +1,97 @@
+Oai rebuild
+
+1. Check Tomcat Logs:
+The first thing to do is to check the Tomcat logs to see if there are any errors or messages that might indicate what went wrong.
+
+Log file location: /opt/tomcat9/logs/catalina.out or /opt/tomcat9/logs/localhost.*.log.
+
+Look for any errors related to the OAI module or Tomcat startup.
+
+You can use tail -f to monitor the logs in real-time:
+
+bash
+Copiar
+Editar
+tail -f /opt/tomcat9/logs/catalina.out
+This will show any errors or helpful logs during the startup and when accessing the OAI endpoint.
+
+2. Verify Apache Reverse Proxy Configuration:
+Ensure that the Apache2 reverse proxy for OAI is correctly set up.
+
+You should have something like this in your Apache configuration file (e.g., /etc/apache2/sites-available/000-default.conf or a specific virtual host file):
+
+apache
+Copiar
+Editar
+<IfModule mod_proxy.c>
+    ProxyPass /oai http://localhost:8080/oai
+    ProxyPassReverse /oai http://localhost:8080/oai
+</IfModule>
+Then, restart Apache:
+
+bash
+Copiar
+Editar
+sudo systemctl restart apache2
+3. Check DSpace Deployment:
+Make sure the OAI module is correctly deployed in DSpace. You can check the DSpace logs to confirm that the OAI module is being initialized.
+
+In your Tomcat logs, look for any messages related to the OAI module, such as: OAI module initialized or any errors during startup.
+
+Verify that the OAI servlet is correctly mapped by inspecting the web.xml file in DSpace (found in /opt/tomcat9/webapps/dspace/WEB-INF/web.xml).
+
+4. Check URL:
+Double-check that you are using the correct URL in the curl command. Ensure that the URL reflects your reverse proxy path:
+
+bash
+Copiar
+Editar
+curl -X GET "https://bd.bnphu.gob.do/oai?verb=Identify"
+5. Verify OAI Configuration in oai.cfg:
+Ensure that the oai.cfg file has the following lines configured correctly:
+
+properties
+Copiar
+Editar
+oai.enabled = true
+oai.path = oai
+oai.base.url = https://bd.bnphu.gob.do/oai
+oai.storage = solr
+oai.solr.url = http://localhost:8983/solr/oai-p
+Also, ensure that the OAI configuration is being loaded correctly by Tomcat. If necessary, you can add some logging inside DSpace to verify if it's reading the configuration properly.
+
+6. Rebuild and Restart DSpace:
+Rebuild DSpace (this ensures all modules, including OAI, are correctly built and deployed):
+
+bash
+Copiar
+Editar
+cd /dspace
+mvn package
+Then, restart Tomcat to ensure all changes are picked up:
+
+bash
+Copiar
+Editar
+sudo systemctl restart tomcat9
+7. Access OAI via Localhost:
+To verify that DSpace is running correctly on the local server, try accessing the OAI endpoint directly on the Tomcat server (before it goes through the reverse proxy):
+
+bash
+Copiar
+Editar
+curl -X GET "http://localhost:8080/oai?verb=Identify"
+If this works but the reverse proxy doesn't, it points to an issue with Apache configuration.
+
+8. Firewall and SELinux (if applicable):
+Ensure there are no firewall or SELinux restrictions preventing access to port 8080 or port 80/443.
+
+You can check if the firewall is blocking the connections using:
+
+bash
+Copiar
+Editar
+sudo ufw status
+sudo iptables -L
+9. Check SSL Configuration:
+Since you're using SSL with https://bd.bnphu.gob.do/oai, make sure there are no issues with the SSL configuration. Check if the SSL certificate is correctly installed and not expired.

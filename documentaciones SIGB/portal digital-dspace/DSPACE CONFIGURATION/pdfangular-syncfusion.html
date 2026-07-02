@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructivo para Implementar Syncfusion Angular PDF Viewer en DSpace 7.6</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        pre {
+            background: #333;
+            color: #f8f8f2;
+            padding: 10px;
+            overflow-x: auto;
+            border-radius: 5px;
+        }
+        code {
+            color: #ff79c6;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Instructivo para Implementar Syncfusion Angular PDF Viewer en DSpace 7.6</h1>
+
+        <h2>1. Configuración del Entorno</h2>
+        <p>Asegúrate de tener el entorno configurado con Yarn y Angular CLI. Debes estar trabajando dentro del proyecto <code>dspace-angular</code>, que es el frontend de tu instalación de DSpace 7.</p>
+
+        <h2>2. Instalar Syncfusion PDF Viewer</h2>
+        <ol>
+            <li>Navega al directorio de <code>dspace-angular</code>:
+                <pre><code>cd [ruta-de-tu-proyecto]/dspace-angular</code></pre>
+            </li>
+            <li>Instala el paquete de Syncfusion Angular PDF Viewer utilizando Yarn:
+                <pre><code>yarn add @syncfusion/ej2-angular-pdfviewer</code></pre>
+            </li>
+        </ol>
+
+        <h2>3. Configuración del Módulo Angular</h2>
+        <ol>
+            <li>Abre <code>app.module.ts</code> y agrega la importación de <code>PdfViewerModule</code>:
+                <pre><code>
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { PdfViewerModule } from '@syncfusion/ej2-angular-pdfviewer';
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    // Otros componentes...
+  ],
+  imports: [
+    BrowserModule,
+    PdfViewerModule,  // Agrega este módulo aquí
+    // Otros módulos...
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+                </code></pre>
+            </li>
+        </ol>
+
+        <h2>4. Implementación del Visor de PDF en el Componente</h2>
+        <ol>
+            <li>Crea un componente nuevo o selecciona el componente donde deseas agregar el visor de PDF. Por ejemplo, puedes crear un nuevo componente llamado <code>pdf-viewer</code>:
+                <pre><code>ng generate component pdf-viewer</code></pre>
+            </li>
+            <li>Abre el archivo HTML del componente (<code>pdf-viewer.component.html</code>) y añade el siguiente código:
+                <pre><code>
+&lt;ejs-pdfviewer id="pdfViewer" [serviceUrl]="'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer'" style="height:600px"&gt;
+&lt;/ejs-pdfviewer&gt;
+                </code></pre>
+            </li>
+            <li>Configura las opciones del visor para deshabilitar la descarga e impresión en el archivo TypeScript del componente (<code>pdf-viewer.component.ts</code>):
+                <pre><code>
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-pdf-viewer',
+  templateUrl: './pdf-viewer.component.html',
+  styleUrls: ['./pdf-viewer.component.css']
+})
+export class PdfViewerComponent {
+  public toolbarSettings: object = {
+    showDownload: false, // Deshabilita la opción de descarga
+    showPrint: false     // Deshabilita la opción de impresión
+  };
+}
+                </code></pre>
+            </li>
+            <li>Modifica el HTML del componente para usar estas configuraciones:
+                <pre><code>
+&lt;ejs-pdfviewer id="pdfViewer" [serviceUrl]="'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer'" [toolbarSettings]="toolbarSettings" style="height:600px"&gt;
+&lt;/ejs-pdfviewer&gt;
+                </code></pre>
+            </li>
+        </ol>
+
+        <h2>5. Integración en DSpace</h2>
+        <ol>
+            <li>Si deseas que este visor esté disponible en una página específica de tu frontend de DSpace, asegúrate de incluir el nuevo componente en la plantilla correspondiente o enlázalo desde donde necesites visualizar los documentos PDF.</li>
+            <li>Puedes personalizar más las opciones del visor según las necesidades de tu proyecto, consultando la documentación oficial de Syncfusion.</li>
+        </ol>
+
+        <h2>6. Prueba y Ajustes</h2>
+        <ol>
+            <li>Ejecuta el frontend para verificar que el visor de PDF funcione correctamente:
+                <pre><code>yarn start</code></pre>
+            </li>
+            <li>Abre el navegador y navega a la ruta del componente para confirmar que el visor de PDF se muestra correctamente sin las opciones de impresión y descarga.</li>
+        </ol>
+
+        <h2>Notas Adicionales</h2>
+        <ul>
+            <li><strong>Backend de Syncfusion:</strong> El <code>serviceUrl</code> usado en este ejemplo apunta a un servicio de prueba proporcionado por Syncfusion. Para un entorno de producción, considera configurar tu propio servicio para gestionar los documentos de manera más segura.</li>
+            <li><strong>Licenciamiento:</strong> Verifica los términos de la licencia de Syncfusion para asegurar que cumples con las condiciones de uso gratuito o considera opciones de licencia pagada si el proyecto lo requiere.</li>
+        </ul>
+    </div>
+</body>
+</html>

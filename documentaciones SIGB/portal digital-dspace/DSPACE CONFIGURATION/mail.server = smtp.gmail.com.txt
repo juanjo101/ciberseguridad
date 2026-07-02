@@ -1,0 +1,33 @@
+mail.server = smtp.gmail.com
+mail.admin = portalbnphurd@gmail.com
+mail.server.username = portalbnphurd@gmail.com
+mail.server.password = Biblioteca21@*+
+mail.server.port = 465
+mail.from.address = portalbnphurd@gmail.com
+alert.recipient = portalbnphurd@gmail.com
+registration.notify = portalbnphurd@gmail.com
+mail.charset = UTF-8
+mail.allowed.referrers = ${dspace.hostname}
+mail.extraproperties = mail.smtp.socketFactory.port=465, \
+mail.smtp.socketFactory.class=javax.net.ssl.SSLSocketFactory, \
+mail.smtp.socketFactory.fallback=false
+## opcion importarte si esta en true no se va a enviar correos
+mail.server.disabled = false
+
+mail.server = smtp.office365.com
+mail.admin = bibliotecadigital@bnphu.gob.do
+mail.admin.name = Administrador de biblioteca digital
+mail.server.username = ${mail.admin}
+mail.server.password = BibliotecaBD21/
+mail.server.port = 587
+mail.from.address = ${mail.admin}
+feedback.recipient = ${mail.admin}
+mail.helpdesk = ${mail.admin}
+mail.helpdesk.name = Help Desk
+alert.recipient = ${mail.admin}
+mail.welcome.enabled = false
+mail.charset = UTF-8
+mail.allowed.referrers = ${dspace.hostname}
+mail.extraproperties = mail.smtp.auth=true, \
+                       mail.smtp.starttls.enable=true
+mail.server.disabled = false

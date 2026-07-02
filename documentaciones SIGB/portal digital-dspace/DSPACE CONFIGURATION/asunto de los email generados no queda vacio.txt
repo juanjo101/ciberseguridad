@@ -1,0 +1,8 @@
+Ruta del direction dspace donde se supone estaba el bug
+
+/home/bnphuser/DSpace-dspace-7.6/dspace-api/src/main/java/org/dspace/core/Email.java
+
+
+
+descripcion del reposotiro oficial de dspace donde se coparte la solucion del bug
+https://github.com/DSpace/DSpace/pull/8922/files#diff-e799738ac5a322784bd336eeb841c8ca3a6f6c13c69508bccc7f027685c27752

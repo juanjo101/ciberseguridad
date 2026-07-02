@@ -1,0 +1,45 @@
+biblionumber as "Número de registro", title as Título, author as Autor, subtitle as Subtítulo, datecreated as "Fecha de creación",
+
+
+
+LEFT JOIN SELECT concat(p.firstname, ' ', p.surname) 'Nombre',p.cardnumber 'Número de carnet',a.action'Action',a.timestamp'Time',a.object 'Record No', a.info 'Descripción'
+FROM action_logs a
+LEFT JOIN borrowers p ON (a.user=p.borrowernumber)
+LEFT JOIN items c ON (a.info=c.itemnumber)
+LEFT JOIN biblio d ON (c.biblionumber=d.biblionumber)
+LEFT JOIN borrowers k ON (a.object=k.borrowernumber)
+where  a.timestamp BETWEEN <<Desde fecha |date>> AND <<Hasta fecha|date>> AND a.module='CATALOGUING'
+ORDER BY p.cardnumber ASC
+
+
+select it.dateaccessioned, title, author, itemnotes_nonpublic, ExtractValue(metadata,'//datafield[@tag="590"]/subfield[@code="a"]') as "590" from biblio bi
+left join biblio_metadata bm on (bi.biblionumber=bm.biblionumber)
+left join items it on (it.biblionumber=bi.biblionumber)
+where itemnotes_nonpublic like '%venta%' or ExtractValue(metadata,'//datafield[@tag="590"]/subfield[@code="a"]') like "%venta%"
+
+
+select it.dateaccessioned, title, author, itemnotes_nonpublic, ExtractValue(metadata,'//datafield[@tag="590"]/subfield[@code="a"]') as "590" from biblio bi
+left join biblio_metadata bm on (bi.biblionumber=bm.biblionumber)
+left join items it on (it.biblionumber=bi.biblionumber)
+where it.dateaccessioned like "2024%"
+
+SELECT
+	Substring(ExtractValue(metadata, '//controlfield[@tag=008]'), 15, 3) AS PAÍS,
+    biblio.copyrightdate AS AÑO,
+    biblioitems.isbn AS ISBN,
+    biblioitems.issn AS ISSN,
+    biblioitems.publishercode AS EDITORIAL,
+    biblio.author AS AUTOR,
+    biblio.title AS TÍTULO,
+    biblio.subtitle AS SUBTITULO,
+    biblio.datecreated AS FECHACREACIÓN
+FROM
+    items
+LEFT JOIN
+    biblioitems ON items.biblioitemnumber = biblioitems.biblioitemnumber
+LEFT JOIN
+    biblio ON biblioitems.biblionumber = biblio.biblionumber
+LEFT JOIN
+    biblio_metadata bm ON biblio.biblionumber = bm.biblionumber
+LEFT JOIN
+    items it ON bm.biblionumber = it.biblionumber

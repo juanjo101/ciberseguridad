@@ -1,0 +1,47 @@
+en /dspace:
+
+275  vim theme.scss
+
+
+requesta a copy set up
+genarate thumbanils
+database migrate
+
+Español 
+adaptar vista a tema bnphu
+en primer lugar vamos a hacer 2 copias de dspace-angular/src/themes/dspace
+
+haremos la copia dspace.bk
+
+y la copia bnphu
+(para crear un tema customizado mientras vamos cambiando el tema de dspace paRA BNPHU )
+y dspace.bk es el tema original de dspace en caso de fallos.
+
+
+modificaciones del theme -- en vez de dspace fue cambiado a bnphu
+en my deploy **--/deployDspace7.6/config$ vim config.prod.yml
+
+
+
+
+y en angular.json el tema bnphu fue añadido de la siguiente forma
+
+  {
+                "input": "src/themes/bnphu/styles/theme.scss",
+                "inject": false,
+                "bundleName": "bnphu-theme"
+              },
+modificaciones en elarchivo de themas en la carpeta themes
+themes/eager-themes.module.ts
+import { EagerThemeModule as BnphuEagerThemeModule } from './bnphu/eager-theme.module';
+
+
+BnphuEagerThemeModule
+
+
+bnphuser@10.3.2.126:~/dspace-angular-dspace-7.6/src/themes/bnphu/assets/images
+
+
+
+
+

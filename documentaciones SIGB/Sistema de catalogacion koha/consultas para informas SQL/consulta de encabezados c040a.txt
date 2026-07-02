@@ -1,0 +1,5 @@
+select bi.biblionumber, bi.title, bi.author from biblio bi
+left join biblio_metadata bm on (bi.biblionumber=bm.biblionumber)
+where ExtractValue(metadata,'//datafield[@tag="040"]/subfield[@code="a"]') !='DO-SdBNP'
+limit 200
+ /* saved_sql.id: 18 */

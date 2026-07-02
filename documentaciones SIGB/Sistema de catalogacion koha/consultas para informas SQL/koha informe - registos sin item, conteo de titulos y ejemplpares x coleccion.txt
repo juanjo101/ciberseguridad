@@ -1,0 +1,39 @@
+
+SELECT distinct
+    i.itype AS  "Código de tipo",    
+    COUNT(DISTINCT i.biblionumber) AS "Títulos",
+    COUNT( i.barcode ) AS  "codigos de barras",
+    COUNT(i.itemnumber) AS 'No. de Volumenes'
+FROM items i
+LEFT JOIN authorised_values av ON ( av.authorised_value = i.ccode ) 
+where i.itype = "ISSUE"
+------------------------------------------------
+Registros trabajados en la plantilla Seriadas
+------------------------------------------------
+/*SELECT * FROM biblio where frameworkcode= 'SER' 
+----------------------------------------------------
+Registros bibliograficos sin Items
+----------------------------------------------------
+SELECT *
+FROM biblio 
+WHERE biblionumber NOT IN (SELECT biblionumber FROM items)
+
+SELECT *
+FROM items i
+LEFT JOIN authorised_values av ON ( av.authorised_value = i.ccode ) 
+where i.itype = "ISSUE"
+
+--------------------------------------------
+Conteo de titulos y ejemplares x coleccion
+------------------------------------------- 
+SELECT  
+    i.biblionumber AS "No. de Registro bibliografico",
+    b.title AS "Título",
+    COUNT(i.itemnumber) AS 'No. de Volumenes y ejemplares'
+FROM items i
+LEFT JOIN authorised_values av ON ( av.authorised_value = i.ccode ) 
+LEFT JOIN biblio b ON (b.biblionumber=i.biblionumber)
+where i.ccode = "se"
+GROUP BY  i.biblionumber 
+
+

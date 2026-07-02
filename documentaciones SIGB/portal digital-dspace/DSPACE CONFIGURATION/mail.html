@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructivo para Configurar Envío de Correos desde DSpace con OAuth2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+        code {
+            background-color: #e8e8e8;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Instructivo para Configurar Envío de Correos desde DSpace con OAuth2</h1>
+
+    <h2>Introducción</h2>
+    <p>Este instructivo describe cómo configurar el envío de correos en DSpace utilizando OAuth2 con Microsoft 365. Esto es necesario si tu organización ha habilitado el doble factor de autenticación (MFA).</p>
+
+    <h2>Pasos a seguir</h2>
+
+    <h3>Paso 1: Configurar una Aplicación Empresarial en Microsoft Entra ID</h3>
+    <ol>
+        <li>Accede al portal de administración de Microsoft Entra ID: <a href="https://entra.microsoft.com/" target="_blank">https://entra.microsoft.com/</a>.</li>
+        <li>Selecciona tu aplicación empresarial (por ejemplo, <code>DSpace SMTP Relay</code>).</li>
+        <li>En <strong>Permisos de API</strong>, asegúrate de agregar:
+            <ul>
+                <li><code>Mail.Send</code> (Delegado).</li>
+                <li><code>User.Read</code> (Delegado).</li>
+            </ul>
+        </li>
+        <li>Haz clic en <strong>Conceder consentimiento de administrador</strong> para estos permisos.</li>
+    </ol>
+
+    <h3>Paso 2: Generar un Secreto de Cliente</h3>
+    <ol>
+        <li>Ve a la sección <strong>Certificados y secretos</strong> en la aplicación empresarial.</li>
+        <li>Haz clic en <strong>Nuevo secreto de cliente</strong>.
+            <ul>
+                <li>Asigna un nombre (por ejemplo, <code>DSpace SMTP</code>).</li>
+                <li>Selecciona una duración (1 o 2 años).</li>
+            </ul>
+        </li>
+        <li>Copia el valor del secreto generado. <strong>Nota:</strong> No podrás verlo nuevamente.</li>
+    </ol>
+
+    <h3>Paso 3: Obtener los IDs de la Aplicación</h3>
+    <ol>
+        <li>Ve a la sección <strong>Información general</strong> de la aplicación empresarial.</li>
+        <li>Copia los siguientes valores:
+            <ul>
+                <li><strong>ID de la aplicación (Client ID)</strong>.</li>
+                <li><strong>ID de directorio (Tenant ID)</strong>.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>Paso 4: Configurar el archivo <code>dspace.cfg</code></h3>
+    <p>Edita el archivo de configuración de DSpace (<code>dspace.cfg</code>) y agrega la siguiente configuración:</p>
+    <pre>
+mail.server=smtp.office365.com
+mail.server.port=587
+mail.server.username=correoenvio@miempresa.com
+mail.server.password=secreto_de_cliente
+mail.server.auth=true
+mail.server.useTLS=true
+mail.server.useSSL=false
+mail.server.from=correoenvio@miempresa.com
+
+# Configuración de OAuth2
+mail.oauth2.enabled=true
+mail.oauth2.client_id=ID_de_la_aplicación
+mail.oauth2.client_secret=secreto_de_cliente
+mail.oauth2.tenant_id=ID_de_directorio
+mail.oauth2.scope=https://graph.microsoft.com/.default
+mail.oauth2.token_url=https://login.microsoftonline.com/ID_de_directorio/oauth2/v2.0/token
+    </pre>
+    <ul>
+        <li><code>ID_de_la_aplicación</code>: Obtenido en el Paso 3.</li>
+        <li><code>secreto_de_cliente</code>: Generado en el Paso 2.</li>
+        <li><code>ID_de_directorio</code>: Obtenido en el Paso 3.</li>
+    </ul>
+
+    <h3>Paso 5: Reiniciar DSpace</h3>
+    <ol>
+        <li>Reinicia tu instancia de DSpace para aplicar los cambios:</li>
+        <pre>sudo systemctl restart tomcat</pre>
+    </ol>
+
+    <h3>Paso 6: Probar el Envío de Correos</h3>
+    <ol>
+        <li>Realiza una acción en DSpace que dispare un correo (por ejemplo, restablecimiento de contraseña).</li>
+        <li>Si falla, revisa los registros en <code>dspace.log</code> para identificar errores.</li>
+    </ol>
+
+    <h2>Notas importantes</h2>
+    <ul>
+        <li>Asegúrate de que el puerto <code>587</code> esté abierto en el servidor y el firewall permita conexiones salientes a <code>smtp.office365.com</code>.</li>
+        <li>Si encuentras problemas, revisa las políticas de acceso condicional en <strong>Microsoft Entra ID</strong> para asegurarte de que no estén bloqueando el acceso SMTP.</li>
+    </ul>
+
+    <h2>¿Necesitas ayuda?</h2>
+    <p>Si necesitas más ayuda, revisa los <strong>logs de DSpace</strong> o consulta con el administrador de Microsoft 365 para confirmar la configuración.</p>
+</body>
+</html>

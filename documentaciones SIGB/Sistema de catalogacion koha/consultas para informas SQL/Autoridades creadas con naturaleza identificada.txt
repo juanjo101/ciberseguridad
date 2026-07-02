@@ -1,0 +1,20 @@
+
+SELECT authid, datecreated, authtypecode, concat(
+ExtractValue(marcxml,'//datafield[@tag="100"]/*'), -- PERSO_NAME
+ExtractValue(marcxml,'//datafield[@tag="110"]/*'), -- CORPO_NAME
+ExtractValue(marcxml,'//datafield[@tag="111"]/*'), -- MEETI_NAME
+ExtractValue(marcxml,'//datafield[@tag="130"]/*'), -- UNIF_TITLE
+ExtractValue(marcxml,'//datafield[@tag="148"]/*'), -- CHRON_TERM
+ExtractValue(marcxml,'//datafield[@tag="150"]/*'), -- TOPIC_TERM
+ExtractValue(marcxml,'//datafield[@tag="151"]/*'), -- GEOGR_NAME
+ExtractValue(marcxml,'//datafield[@tag="155"]/*')  -- GENRE/FORM
+) as main_heading
+FROM auth_header
+WHERE datecreated BETWEEN <<Fecha Inicio>> AND  <<Fecha Final>>
+ORDER BY datecreated, authtypecode, main_heading /* saved_sql.id: 71 */
+
+
+ 
+ 
+ 
+

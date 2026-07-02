@@ -1,0 +1,10 @@
+SELECT  
+	CONCAT('<a href="https://koha-intra.bnphu.gob.do/cgi-bin/koha/catalogue/detail.pl?biblionumber=', b.biblionumber, '\">', b.biblionumber, '</a>') AS "No. de Registro bibliografico",
+    b.author AS Autor,
+    b.title AS Título,
+    COUNT(i.itemnumber) AS 'No. de ejemplares con la nota buscada'
+FROM items i 
+LEFT JOIN biblio b ON (b.biblionumber=i.biblionumber)
+where i.itemnotes like CONCAT("%",'Donado',"%")
+GROUP BY  i.biblionumber 
+order by COUNT(i.itemnumber) desc /* saved_sql.id: 79 */

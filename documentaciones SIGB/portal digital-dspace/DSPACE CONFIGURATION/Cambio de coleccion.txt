@@ -1,0 +1,62 @@
+
+### ✅ **Método correcto en DSpace 7.6**
+En la **interfaz web de administración**, puedes mover una colección siguiendo estos pasos:
+
+1. Inicia sesión en DSpace como **administrador**.
+2. Ve a **Administración** → **Estructura del repositorio** → **Colecciones**.
+3. Selecciona la colección que deseas mover.
+4. Busca la opción para **Mover colección** y selecciona la nueva comunidad de destino.
+5. Guarda los cambios.
+
+### 🖥 **Método manual (Base de datos)**
+Si necesitas mover la colección manualmente en PostgreSQL, sigue estos pasos:
+
+1. Accede a la base de datos de DSpace:
+   ```bash
+   sudo -u postgres psql dspace
+   ```
+   
+2. **Verifica los IDs** de la comunidad y la colección:
+   ```sql
+   SELECT uuid, handle FROM collection;
+   SELECT uuid, handle FROM community;
+   ```
+
+3. **Actualiza la relación en la tabla `community2collection`**:
+   ```sql
+   UPDATE community2collection
+   SET community_id = 'UUID_NUEVA_COMUNIDAD'
+   WHERE collection_id = 'UUID_COLECCION';
+   ```
+
+   🔹 **Ejemplo real**: Si la colección tiene `uuid = '123e4567-e89b-12d3-a456-426614174000'` y la nueva comunidad tiene `uuid = '987f6543-a21b-45d3-c567-826612345678'`, ejecuta:
+
+   ```sql
+   UPDATE community2collection
+   SET community_id = '987f6543-a21b-45d3-c567-826612345678'
+   WHERE collection_id = '123e4567-e89b-12d3-a456-426614174000';
+   ```
+
+4. **Verifica que el cambio se realizó correctamente**:
+   ```sql
+   SELECT * FROM community2collection WHERE collection_id = 'UUID_COLECCION';
+   ```
+
+5. **Reindexa Discovery para reflejar los cambios**:
+   ```bash
+   sudo /dspace/bin/dspace index-discovery -b
+   ```
+
+6. **Reinicia Tomcat** para asegurar que los cambios sean visibles:
+   ```bash
+   sudo systemctl restart tomcat9
+   ```
+
+---
+
+### 🔥 **Resumen**
+- No existe un comando en `dspace` CLI para mover colecciones.
+- **Método recomendado:** Usar la interfaz de administración de DSpace.
+- **Método alternativo:** Modificar PostgreSQL directamente y reindexar.
+
+Si tienes dudas o encuentras algún error en PostgreSQL, dime qué mensaje aparece y te ayudo a corregirlo. 🚀

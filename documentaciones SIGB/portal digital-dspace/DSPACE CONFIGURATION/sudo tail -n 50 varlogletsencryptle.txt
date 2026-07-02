@@ -1,0 +1,51 @@
+ sudo tail -n 50 /var/log/letsencrypt/letsencrypt.log
+2024-10-17 14:49:23,294:DEBUG:certbot._internal.error_handler:Encountered exception:
+Traceback (most recent call last):
+  File "/snap/certbot/3834/lib/python3.8/site-packages/certbot/_internal/auth_handler.py", line 108, in handle_authorizations
+    self._poll_authorizations(authzrs, max_retries, max_time_mins, best_effort)
+  File "/snap/certbot/3834/lib/python3.8/site-packages/certbot/_internal/auth_handler.py", line 212, in _poll_authorizations
+    raise errors.AuthorizationError('Some challenges have failed.')
+certbot.errors.AuthorizationError: Some challenges have failed.
+
+2024-10-17 14:49:23,294:DEBUG:certbot._internal.error_handler:Calling registered functions
+2024-10-17 14:49:23,294:INFO:certbot._internal.auth_handler:Cleaning up challenges
+2024-10-17 14:49:23,425:ERROR:certbot._internal.renewal:Failed to renew certificate bd.bnphu.gob.do with error: Some challenges have failed.
+2024-10-17 14:49:23,426:DEBUG:certbot._internal.renewal:Traceback was:
+Traceback (most recent call last):
+  File "/snap/certbot/3834/lib/python3.8/site-packages/certbot/_internal/renewal.py", line 540, in handle_renewal_request
+    main.renew_cert(lineage_config, plugins, renewal_candidate)
+  File "/snap/certbot/3834/lib/python3.8/site-packages/certbot/_internal/main.py", line 1550, in renew_cert
+    renewed_lineage = _get_and_save_cert(le_client, config, lineage=lineage)
+  File "/snap/certbot/3834/lib/python3.8/site-packages/certbot/_internal/main.py", line 131, in _get_and_save_cert
+    renewal.renew_cert(config, domains, le_client, lineage)
+  File "/snap/certbot/3834/lib/python3.8/site-packages/certbot/_internal/renewal.py", line 399, in renew_cert
+    new_cert, new_chain, new_key, _ = le_client.obtain_certificate(domains, new_key)
+  File "/snap/certbot/3834/lib/python3.8/site-packages/certbot/_internal/client.py", line 428, in obtain_certificate
+    orderr = self._get_order_and_authorizations(csr.data, self.config.allow_subset_of_names)
+  File "/snap/certbot/3834/lib/python3.8/site-packages/certbot/_internal/client.py", line 496, in _get_order_and_authorizations
+    authzr = self.auth_handler.handle_authorizations(orderr, self.config, best_effort)
+  File "/snap/certbot/3834/lib/python3.8/site-packages/certbot/_internal/auth_handler.py", line 108, in handle_authorizations
+    self._poll_authorizations(authzrs, max_retries, max_time_mins, best_effort)
+  File "/snap/certbot/3834/lib/python3.8/site-packages/certbot/_internal/auth_handler.py", line 212, in _poll_authorizations
+    raise errors.AuthorizationError('Some challenges have failed.')
+certbot.errors.AuthorizationError: Some challenges have failed.
+
+2024-10-17 14:49:23,428:DEBUG:certbot._internal.display.obj:Notifying user:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2024-10-17 14:49:23,428:ERROR:certbot._internal.renewal:All renewals failed. The following certificates could not be renewed:
+2024-10-17 14:49:23,428:ERROR:certbot._internal.renewal:  /etc/letsencrypt/live/bd.bnphu.gob.do/fullchain.pem (failure)
+2024-10-17 14:49:23,428:DEBUG:certbot._internal.display.obj:Notifying user: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2024-10-17 14:49:23,428:DEBUG:certbot._internal.log:Exiting abnormally:
+Traceback (most recent call last):
+  File "/snap/certbot/3834/bin/certbot", line 8, in <module>
+    sys.exit(main())
+  File "/snap/certbot/3834/lib/python3.8/site-packages/certbot/main.py", line 19, in main
+    return internal_main.main(cli_args)
+  File "/snap/certbot/3834/lib/python3.8/site-packages/certbot/_internal/main.py", line 1894, in main
+    return config.func(config, plugins)
+  File "/snap/certbot/3834/lib/python3.8/site-packages/certbot/_internal/main.py", line 1642, in renew
+    renewed_domains, failed_domains = renewal.handle_renewal_request(config)
+  File "/snap/certbot/3834/lib/python3.8/site-packages/certbot/_internal/renewal.py", line 568, in handle_renewal_request
+    raise errors.Error(
+certbot.errors.Error: 1 renew failure(s), 0 parse failure(s)
+2024-10-17 14:49:23,428:ERROR:certbot._internal.log:1 renew failure(s), 0 parse failure(s)

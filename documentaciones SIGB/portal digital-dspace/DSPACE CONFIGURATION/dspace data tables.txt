@@ -1,0 +1,71 @@
+                 List of relations
+ Schema |          Name           | Type  | Owner
+--------+-------------------------+-------+--------
+ public | bitstream               | table | dspace
+ public | bitstreamformatregistry | table | dspace
+ public | bundle                  | table | dspace
+ public | bundle2bitstream        | table | dspace
+ public | checksum_history        | table | dspace
+ public | checksum_results        | table | dspace
+ public | collection              | table | dspace
+ public | collection2item         | table | dspace
+ public | community               | table | dspace
+ public | community2collection    | table | dspace
+ public | community2community     | table | dspace
+ public | cwf_claimtask           | table | dspace
+ public | cwf_collectionrole      | table | dspace
+ public | cwf_in_progress_user    | table | dspace
+ public | cwf_pooltask            | table | dspace
+ public | cwf_workflowitem        | table | dspace
+ public | cwf_workflowitemrole    | table | dspace
+ public | doi                     | table | dspace
+ public | dspaceobject            | table | dspace
+ public | entity_type             | table | dspace
+ public | eperson                 | table | dspace
+ public | epersongroup            | table | dspace
+ public | epersongroup2eperson    | table | dspace
+ public | fileextension           | table | dspace
+ public | group2group             | table | dspace
+ public | group2groupcache        | table | dspace
+ public | handle                  | table | dspace
+ public | harvested_collection    | table | dspace
+ public | harvested_item          | table | dspace
+ public | item                    | table | dspace
+ public | item2bundle             | table | dspace
+ public | metadatafieldregistry   | table | dspace
+ public | metadataschemaregistry  | table | dspace
+ public | metadatavalue           | table | dspace
+ public | most_recent_checksum    | table | dspace
+ public | openurltracker          | table | dspace
+ public | orcid_history           | table | dspace
+ public | orcid_queue             | table | dspace
+
+
+
+ eperson_id |             email              |                                                             password                                                             | can_log_in | require_certificate | self_registered |       last_active       | sub_frequency | netid |               salt               | digest_algorithm |                 uuid                 |           session_salt
+------------+--------------------------------+----------------------------------------------------------------------------------------------------------------------------------+------------+---------------------+-----------------+-------------------------+---------------+-------+----------------------------------+------------------+--------------------------------------+----------------------------------
+          9 | emarrero@unphu.edu.do          |                                                                                                                                  | t          | f                   | f               |                         |               |       |                                  |                  | b15406e8-5b51-4bbd-b3b1-a41ba62de27e |
+         10 | ingrichardpaula@gmail.com      |                                                                                                                                  | f          | f                   | f               |                         |               |       |                                  |                  | a500c971-1719-4460-8ba7-9b86d231ae77 |
+         11 | mmanzueta@bnphu.gob.do         |                                                                                                                                  | t          | f                   | f               |                         |               |       |                                  |                  | c1f6362c-234b-4618-b189-08631f6eec03 |
+          6 | jfmorenomejia@gmail.com        | 3a441669ece9a22178605c140b5535fcd1da0fd616accb06c3217f767740e21ffa07e5ea1406d22b0db6df96af5e3b5eea26f6f7506fc8b270c0ba2bfbca7f7f | t          | f                   | t               | 2024-02-15 08:44:58.668 |               |       | a39decc15c13e3b146a4603ad9b89f31 | SHA-512          | 68b39d8e-0e02-45f8-bd31-c42ddf26a267 |
+          5 | rpaula@bnphu.gob.do            | 09e4fbaca210a8df63cfde279b03a2d9dc9ea40dfed6d79eb23d0898a7fa1cb1fd43ca1954857057b4451a8f2aa28505d1496f0df683f88efde72df19a466b46 | t          | f                   | t               | 2023-11-30 08:58:15.386 |               |       | 4748ae8dbf0598f0fcf1af0ca527d830 | SHA-512          | b5bcb3bf-0f4e-46a5-af9d-60b1a81ca465 |
+            | juanjo101@gmail.com            | a1b957714db8b4fdebe44234fd6ed1ee293ae4d535935d788cfadfc01dede69200068064652a8a0d4e31a571b3de40a4c71febaa7b7991c39f14879570e68ae7 | t          | f                   | f               | 2024-03-05 18:51:32.693 |               |       | 23162964856f3298bf35a0fcc9ea7eb8 | SHA-512          | 6b6c29fb-a0e7-441b-80fb-eb802a19840a | Qn46Se3iTBsIFp0mxbMiT37SXqN5r8N/
+          7 | jdiaz@bnphu.gob.do             | da25bc0da267d5dcf8f9b4e98eb5a26660513006a1aee54eb6605c8d5a4c99f74343e92272ebe3d7188768e7593c37f9c932427bc5ab974e951edefee1d461d1 | t          | f                   | f               | 2024-03-04 14:04:00.93  |               |       | 873b9da1a15730cf49ccffcc997b42fb | SHA-512          | a944228c-f5cd-4104-a7de-f87de5ab1ed4 |
+          2 | bibliotecadigital@bnphu.gob.do | 725f22e5bf35d945ab71e23ba2bf30c4e3a6801af1e3577d281aca6aa7649be30f7835c66a4b57c94aae635d89b71cb16d8335fc545edb1328cab72b9b078d43 | t          | f                   | f               | 2024-03-06 13:12:01.024 |               |       | 999290fba7194d87537f434a188f68b9 | SHA-512          | 99e22f61-f237-4ade-9729-03d82405e40d | umFlZuAlWDewTlVFkucUxIINxqpk1Cq8
+            | jramirez@bnphu.gob.do          | 0676b4344613217a8b2ff0ba26d711f089d206eb2d7cd24c584e0dd110590240a2b624d629ba2292451bbbcbb070dc95b7d0e014d5fe09f910495f953a378e63 | t          | f                   | f               | 2024-03-01 18:38:48.929 |               |       | 2c10aa7ef8afc20dcbb31b4173536818 | SHA-512          | 1a7a64fb-1570-428b-8c37-4151f9bcff92 | oX2ufq8WbsnPAIk73sjaDx6+EP4QxVkS
+            | amatos@bnphu.gob.do            | 4c2caed703161b0f81ca4523935b2dc09a7ebf978b6ce2af5bf9a97821f1a807491431b7555ffb27181d9482a99421570a4cf585fceaf8e91f22c3d762d55baf | t          | f                   | f               | 2024-03-04 19:18:59.868 |               |       | 879d4087d9e5d9e0bdabf7c5aa276106 | SHA-512          | c6180a34-e625-47fc-9d2a-f34b21b10745 |
+(10 rows)
+
+~
+~
+
+
+
+
+token               | allfiles |                   request_email                   |               request_name                |      request_date       | accept_request | decision_date | expires |                                                                                 request_message                                                                                               |               item_id                |             bitstream_id
+----------------+----------------------------------+----------+---------------------------------------------------+-------------------------------------------+-------------------------+----------------+---------------+---------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+--------------------------------------
+           1433 | e95c16a8154fbcc33897c598ef16ff13 | t        | juanjo101@gmail.com                               | juan diaz                                 | 2024-03-04 14:08:28.523 | f              |               |         | Saludos Dame autorizacion manin yo toy estuduando en UAD y necesito ese libro pa una tarea el el maestro Arndres L. Mateo                                                                                                                  | 00bf6b63-54d3-4ba9-aff9-23ac27dbf63a |
+           1461 | b89655ae9d6bd33f585777e66cd9e652 | f        | amatos@bnphu.gob.do                               | arl                                       | 2024-03-04 19:48:11.919 | f              |               |         | test                                                                                                                                                                                                                                        | 901101bf-413f-49ea-85e9-517a73b77bd9 | 0fa736fc-e73e-4e1c-b58f-9ed03e238be4
+           1483 | 8a86739e225602ca78d560b2caafaa64 | f        | arlessmare@gmail.com                              | arl                                       | 2024-03-05 17:28:52.058 | f              |               |         |                                                                                                                                                                                                                                             | f0e72d6d-028a-4b4d-a280-211508a05d9f | b94662fb-6426-4f6b-bdef-b19ea9cf38db
+           1434 | 1bf674931bfc7571a02debf76e334509 | f        | juanjo101@gmail.com                               | juan diaz                                 | 2024-03-04 14:31:43.046 | f              |               |         | apruebame qlq manin                                                                                                                                                                                                                    | 102ea8d1-462e-4d39-92bb-9d269d6ef1dd | 9e8ed2e3-0ffc-4fc3-801c-485217f4d69e
+           1462 | 0ec0e721664eab3c2e1754da320ced4b | f        | arlessmare@gmail.com                              | arl                                       | 2024-03-05 12:30:44.192 | f              |               |         | prueba 2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

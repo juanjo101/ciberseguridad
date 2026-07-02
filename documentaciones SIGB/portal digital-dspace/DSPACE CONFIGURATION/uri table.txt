@@ -1,0 +1,16 @@
+Para actualizar las URLs en la base de datos de DSpace 7.6 al cambiar de dominio, necesitas ejecutar varias consultas SQL para asegurarte de que todas las referencias se actualicen correctamente. Aquí tienes los pasos detallados:
+
+SELECT * FROM handle WHERE handle LIKE 'http://new-domain/handle/%';
+SELECT * FROM item WHERE provenance_description LIKE '%http://new-domain/%';
+SELECT * FROM metadatavalue WHERE text_value LIKE 'http://new-domain/%';
+SELECT * FROM bitstream WHERE description LIKE 'http://new-domain/%';
+
+UPDATE metadatavalue
+SET text_value = REPLACE(text_value, 'http://bibliotecadigital.bnphu.gob.do:8080/xmlui/', 'https://bd.bnphu.gob.do/')
+WHERE text_value LIKE ' http://bibliotecadigital.bnphu.gob.do:8080/xmlui/handle/%';
+
+
+SELECT * FROM handle WHERE handle LIKE 'http://new-domain/handle/%';
+SELECT * FROM item WHERE provenance_description LIKE '%http://new-domain/%';
+SELECT * FROM metadatavalue WHERE text_value LIKE 'http://new-domain/%';
+SELECT * FROM bitstream WHERE description LIKE 'http://new-domain/%';

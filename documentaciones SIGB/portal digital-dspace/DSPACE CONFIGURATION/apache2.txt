@@ -1,0 +1,345 @@
+bnphuser@dspace:~/dspace-angular-dspace-7.6$ pm2 stop ~/dspace7.6deploy/dspace-ui.json
+[PM2] [dspace-ui](0) ✓
+┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+│ id │ name               │ mode     │ ↺    │ status    │ cpu      │ memory   │
+├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤
+│ 0  │ dspace-ui          │ fork     │ 3    │ stopped   │ 0%       │ 0b       │
+└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘
+bnphuser@dspace:~/dspace-angular-dspace-7.6$ pm2 start ~/dspace7.6deploy/dspace-ui.json
+[PM2] Applying action restartProcessId on app [dspace-ui](ids: [ 0 ])
+[PM2] [dspace-ui](0) ✓
+┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+│ id │ name               │ mode     │ ↺    │ status    │ cpu      │ memory   │
+├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤
+│ 0  │ dspace-ui          │ fork     │ 3    │ online    │ 0%       │ 17.8mb   │
+└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘
+bnphuser@dspace:~/dspace-angular-dspace-7.6$ sudo apt install apache2
+[sudo] password for bnphuser:
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  apache2-bin apache2-data apache2-utils
+Suggested packages:
+  apache2-doc apache2-suexec-pristine | apache2-suexec-custom
+The following NEW packages will be installed:
+  apache2 apache2-data apache2-utils
+The following packages will be upgraded:
+  apache2-bin
+1 upgraded, 3 newly installed, 0 to remove and 151 not upgraded.
+Need to get 1,976 kB of archives.
+After this operation, 1,966 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 https://deb.debian.org/debian-security bookworm-security/main amd64 apache2-bin amd64 2.4.61-1~deb12u1 [1,384 kB]
+Get:2 https://deb.debian.org/debian-security bookworm-security/main amd64 apache2-data all 2.4.61-1~deb12u1 [160 kB]
+Get:3 https://deb.debian.org/debian-security bookworm-security/main amd64 apache2-utils amd64 2.4.61-1~deb12u1 [209 kB]
+Get:4 https://deb.debian.org/debian-security bookworm-security/main amd64 apache2 amd64 2.4.61-1~deb12u1 [222 kB]
+Fetched 1,976 kB in 1s (2,588 kB/s)
+Reading changelogs... Done
+(Reading database ... 191475 files and directories currently installed.)
+Preparing to unpack .../apache2-bin_2.4.61-1~deb12u1_amd64.deb ...
+Unpacking apache2-bin (2.4.61-1~deb12u1) over (2.4.57-2) ...
+Selecting previously unselected package apache2-data.
+Preparing to unpack .../apache2-data_2.4.61-1~deb12u1_all.deb ...
+Unpacking apache2-data (2.4.61-1~deb12u1) ...
+Selecting previously unselected package apache2-utils.
+Preparing to unpack .../apache2-utils_2.4.61-1~deb12u1_amd64.deb ...
+Unpacking apache2-utils (2.4.61-1~deb12u1) ...
+Selecting previously unselected package apache2.
+Preparing to unpack .../apache2_2.4.61-1~deb12u1_amd64.deb ...
+Unpacking apache2 (2.4.61-1~deb12u1) ...
+Setting up apache2-bin (2.4.61-1~deb12u1) ...
+Setting up apache2-data (2.4.61-1~deb12u1) ...
+Setting up apache2-utils (2.4.61-1~deb12u1) ...
+Setting up apache2 (2.4.61-1~deb12u1) ...
+Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling module reqtimeout.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache2.service → /lib/systemd/system/apache2.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache-htcacheclean.service → /lib/systemd/system/apache-htcacheclean.service.
+Processing triggers for man-db (2.11.2-2) ...
+bnphuser@dspace:~/dspace-angular-dspace-7.6$ sudo apt install tomcat9
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Package tomcat9 is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+E: Package 'tomcat9' has no installation candidate
+bnphuser@dspace:~/dspace-angular-dspace-7.6$
+bnphuser@dspace:~/dspace-angular-dspace-7.6$ sudo add-apt-repository ppa:linuxuprising/tomcat9
+Traceback (most recent call last):
+  File "/usr/bin/add-apt-repository", line 362, in <module>
+    sys.exit(0 if addaptrepo.main() else 1)
+                  ^^^^^^^^^^^^^^^^^
+  File "/usr/bin/add-apt-repository", line 345, in main
+    shortcut = handler(source, **shortcut_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/softwareproperties/shortcuts.py", line 40, in shortcut_handler
+    return handler(shortcut, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/softwareproperties/ppa.py", line 86, in __init__
+    if self.lpppa.publish_debug_symbols:
+       ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/softwareproperties/ppa.py", line 126, in lpppa
+    self._lpppa = self.lpteam.getPPAByName(name=self.ppaname)
+                  ^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/softwareproperties/ppa.py", line 113, in lpteam
+    self._lpteam = self.lp.people(self.teamname)
+                   ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'people'
+bnphuser@dspace:~/dspace-angular-dspace-7.6$ sudo apt update
+Hit:1 https://deb.debian.org/debian bookworm InRelease
+Hit:2 https://deb.debian.org/debian-security bookworm-security InRelease
+Hit:3 https://download.docker.com/linux/debian bookworm InRelease
+Hit:4 http://apt.postgresql.org/pub/repos/apt bookworm-pgdg InRelease
+Get:5 https://deb.debian.org/debian bookworm-proposed-updates InRelease [59.5 kB]
+Ign:6 https://ftp.us.debian.org/debian-security bookworm-security InRelease
+Ign:6 https://ftp.us.debian.org/debian-security bookworm-security InRelease
+Ign:6 https://ftp.us.debian.org/debian-security bookworm-security InRelease
+Err:6 https://ftp.us.debian.org/debian-security bookworm-security InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 64.50.233.100 443]
+Fetched 59.5 kB in 8s (7,144 B/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+151 packages can be upgraded. Run 'apt list --upgradable' to see them.
+W: Failed to fetch https://ftp.us.debian.org/debian-security/dists/bookworm-security/InRelease  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 64.50.233.100 443]
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+bnphuser@dspace:~/dspace-angular-dspace-7.6$ sudo apt install tomcat9
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Package tomcat9 is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+E: Package 'tomcat9' has no installation candidate
+bnphuser@dspace:~/dspace-angular-dspace-7.6$
+bnphuser@dspace:~/dspace-angular-dspace-7.6$ cd /etc/apache2/sites-available/
+bnphuser@dspace:/etc/apache2/sites-available$ ls
+000-default.conf  default-ssl.conf
+bnphuser@dspace:/etc/apache2/sites-available$ sudo a2ensite dspace
+ERROR: Site dspace does not exist!
+bnphuser@dspace:/etc/apache2/sites-available$ sudo a2ensite dspace.conf
+ERROR: Site dspace does not exist!
+bnphuser@dspace:/etc/apache2/sites-available$ sudo touch dspace.conf
+bnphuser@dspace:/etc/apache2/sites-available$ sudo a2ensite dspace
+Enabling site dspace.
+To activate the new configuration, you need to run:
+  systemctl reload apache2
+bnphuser@dspace:/etc/apache2/sites-available$ sudo systemctl reload apache2
+bnphuser@dspace:/etc/apache2/sites-available$ sudo a2ensite dspace
+Site dspace already enabled
+bnphuser@dspace:/etc/apache2/sites-available$ sudo a2enmod rewrite
+Enabling module rewrite.
+To activate the new configuration, you need to run:
+  systemctl restart apache2
+bnphuser@dspace:/etc/apache2/sites-available$ sudo systemctl restart apache2.service
+bnphuser@dspace:/etc/apache2/sites-available$ sudo apache2ctl configtest
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+Syntax OK
+bnphuser@dspace:/etc/apache2/sites-available$ vim /etc/hosts
+bnphuser@dspace:/etc/apache2/sites-available$ sudo vim /etc/hosts
+bnphuser@dspace:/etc/apache2/sites-available$ sudo apache2ctl configtest
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+Syntax OK
+bnphuser@dspace:/etc/apache2/sites-available$ sudo systemctl status apache2.service -l --no-pager
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/lib/systemd/system/apache2.service; enabled; preset: enabled)
+     Active: active (running) since Fri 2024-07-19 11:35:35 EDT; 6min ago
+       Docs: https://httpd.apache.org/docs/2.4/
+    Process: 59044 ExecStart=/usr/sbin/apachectl start (code=exited, status=0/SUCCESS)
+   Main PID: 59050 (apache2)
+      Tasks: 55 (limit: 38441)
+     Memory: 21.1M
+        CPU: 40ms
+     CGroup: /system.slice/apache2.service
+             ├─59050 /usr/sbin/apache2 -k start
+             ├─59051 /usr/sbin/apache2 -k start
+             └─59052 /usr/sbin/apache2 -k start
+
+Jul 19 11:35:35 dspace systemd[1]: Starting apache2.service - The Apache HTTP Server...
+Jul 19 11:35:35 dspace apachectl[59049]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+Jul 19 11:35:35 dspace systemd[1]: Started apache2.service - The Apache HTTP Server.
+bnphuser@dspace:/etc/apache2/sites-available$ sudo systemctl status httpd.service -l --no-pager
+Unit httpd.service could not be found.
+bnphuser@dspace:/etc/apache2/sites-available$
+bnphuser@dspace:/etc/apache2/sites-available$ sudo apt update
+Hit:1 https://deb.debian.org/debian bookworm InRelease
+Ign:2 https://ftp.us.debian.org/debian-security bookworm-security InRelease
+Hit:3 https://deb.debian.org/debian-security bookworm-security InRelease
+Hit:4 https://download.docker.com/linux/debian bookworm InRelease
+Hit:5 https://deb.debian.org/debian bookworm-proposed-updates InRelease
+Hit:6 http://apt.postgresql.org/pub/repos/apt bookworm-pgdg InRelease
+Ign:2 https://ftp.us.debian.org/debian-security bookworm-security InRelease
+Ign:2 https://ftp.us.debian.org/debian-security bookworm-security InRelease
+Err:2 https://ftp.us.debian.org/debian-security bookworm-security InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 64.50.233.100 443]
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+151 packages can be upgraded. Run 'apt list --upgradable' to see them.
+W: Failed to fetch https://ftp.us.debian.org/debian-security/dists/bookworm-security/InRelease  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 64.50.233.100 443]
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+bnphuser@dspace:/etc/apache2/sites-available$ sudo apt install snapd
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  squashfs-tools
+The following NEW packages will be installed:
+  snapd squashfs-tools
+0 upgraded, 2 newly installed, 0 to remove and 151 not upgraded.
+Need to get 15.1 MB of archives.
+After this operation, 61.9 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 https://deb.debian.org/debian bookworm/main amd64 squashfs-tools amd64 1:4.5.1-1 [183 kB]
+Get:2 https://deb.debian.org/debian bookworm/main amd64 snapd amd64 2.57.6-1+b5 [14.9 MB]
+Fetched 15.1 MB in 3s (5,291 kB/s)
+Selecting previously unselected package squashfs-tools.
+(Reading database ... 192011 files and directories currently installed.)
+Preparing to unpack .../squashfs-tools_1%3a4.5.1-1_amd64.deb ...
+Unpacking squashfs-tools (1:4.5.1-1) ...
+Selecting previously unselected package snapd.
+Preparing to unpack .../snapd_2.57.6-1+b5_amd64.deb ...
+Unpacking snapd (2.57.6-1+b5) ...
+Setting up squashfs-tools (1:4.5.1-1) ...
+Setting up snapd (2.57.6-1+b5) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/snapd.aa-prompt-listener.service → /lib/systemd/system/snapd.aa-prompt-listener.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/snapd.apparmor.service → /lib/systemd/system/snapd.apparmor.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/snapd.recovery-chooser-trigger.service → /lib/systemd/system/snapd.recovery-chooser-trigger.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/snapd.seeded.service → /lib/systemd/system/snapd.seeded.service.
+Created symlink /etc/systemd/system/cloud-final.service.wants/snapd.seeded.service → /lib/systemd/syst
+em/snapd.seeded.service.
+Unit /lib/systemd/system/snapd.seeded.service is added as a dependency to a non-existent unit cloud-fi
+nal.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/snapd.service → /lib/systemd/system/snapd.service.
+Created symlink /etc/systemd/system/sockets.target.wants/snapd.socket → /lib/systemd/system/snapd.socket.
+Processing triggers for gnome-menus (3.36.0-1.1) ...
+Processing triggers for man-db (2.11.2-2) ...
+Processing triggers for dbus (1.14.10-1~deb12u1) ...
+Processing triggers for mailcap (3.70+nmu1) ...
+Processing triggers for desktop-file-utils (0.26-1) ...
+bnphuser@dspace:/etc/apache2/sites-available$ exit
+logout
+Connection to 10.3.2.126 closed.
+PS C:\Users\amatos> ssh bnphuser@10.3.2.126
+bnphuser@10.3.2.126's password:
+Linux dspace 6.1.0-18-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.76-1 (2024-02-01) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Fri Jul 19 08:35:44 2024 from 10.3.2.138
+Using CATALINA_BASE:   /opt/tomcat9
+Using CATALINA_HOME:   /opt/tomcat9
+Using CATALINA_TMPDIR: /opt/tomcat9/temp
+Using JRE_HOME:        /usr/lib/jvm/java-17-openjdk-amd64
+Using CLASSPATH:       /opt/tomcat9/bin/bootstrap.jar:/opt/tomcat9/bin/tomcat-juli.jar
+Using CATALINA_OPTS:   -Djava.awt.headless=true -Xms1024m -Xmx2048m -XX:MaxMetaspaceSize=1024m -Dfile.encoding=UTF-8
+Tomcat started.
+bnphuser@dspace:~$ su
+bnphuser@dspace:~$ sudo snap install core
+[sudo] password for bnphuser:
+2024-07-19T11:48:09-04:00 INFO Waiting for automatic snapd restart...
+core 16-2.61.4-20240607 from Canonical✓ installed
+bnphuser@dspace:~$ sudo snap install --classic certbot
+certbot 2.11.0 from Certbot Project (certbot-eff✓) installed
+bnphuser@dspace:~$ sudo ln -s /snap/bin/certbot
+bnphuser@dspace:~$ sudo certbot --apache bibliotecadigital.bnphu.gob.do
+sudo: certbot: command not found
+bnphuser@dspace:~$ certbot
+The following error was encountered:
+[Errno 13] Permission denied: '/var/log/letsencrypt'
+Either run as root, or set --config-dir, --work-dir, and --logs-dir to writeable paths.
+Ask for help or search for solutions at https://community.letsencrypt.org. See the logfile /tmp/certbot-log-uetfxnof/log or re-run Certbot with -v for more details.
+bnphuser@dspace:~$ sudo ln -s /snap/bin/certbot /usr/bin/certbot
+bnphuser@dspace:~$ sudo certbot --apache bibliotecadigital.bnphu.gob.do
+usage:
+  certbot [SUBCOMMAND] [options] [-d DOMAIN] [-d DOMAIN] ...
+
+Certbot can obtain and install HTTPS/TLS/SSL certificates.  By default,
+it will attempt to use a webserver both for obtaining and installing the
+certificate.
+certbot: error: unrecognized arguments: bibliotecadigital.bnphu.gob.do
+bnphuser@dspace:~$ sudo certbot --apache
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+Enter email address (used for urgent renewal and security notices)
+ (Enter 'c' to cancel): c
+An e-mail address or --register-unsafely-without-email must be provided.
+Ask for help or search for solutions at https://community.letsencrypt.org. See the logfile /var/log/letsencrypt/letsencrypt.log or re-run Certbot with -v for more details.
+bnphuser@dspace:~$ sudo certbot --apache
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+Enter email address (used for urgent renewal and security notices)
+ (Enter 'c' to cancel): bibliotecadigital@bnphu.gob.do
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Please read the Terms of Service at
+https://letsencrypt.org/documents/LE-SA-v1.4-April-3-2024.pdf. You must agree in
+order to register with the ACME server. Do you agree?
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(Y)es/(N)o: y
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Would you be willing, once your first certificate is successfully issued, to
+share your email address with the Electronic Frontier Foundation, a founding
+partner of the Let's Encrypt project and the non-profit organization that
+develops Certbot? We'd like to send you email about our work encrypting the web,
+EFF news, campaigns, and ways to support digital freedom.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(Y)es/(N)o: y
+Account registered.
+Please enter the domain name(s) you would like on your certificate (comma and/or
+space separated) (Enter 'c' to cancel): https://bibliotecadigital.bnphu.gob.do/
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+One or more of the entered domain names was not valid:
+
+https://bibliotecadigital.bnphu.gob.do/: Requested name
+https://bibliotecadigital.bnphu.gob.do/ appears to be a URL, not a FQDN. Try
+again without the leading "https://".
+
+Would you like to re-enter the names?
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(Y)es/(N)o: y
+Please enter the domain name(s) you would like on your certificate (comma and/or
+space separated) (Enter 'c' to cancel): bibliotecadigital.bnphu.gob.do
+Requesting a certificate for bibliotecadigital.bnphu.gob.do
+
+Certbot failed to authenticate some domains (authenticator: apache). The Certificate Authority reported these problems:
+  Domain: bibliotecadigital.bnphu.gob.do
+  Type:   connection
+  Detail: 186.148.90.78: Fetching http://bibliotecadigital.bnphu.gob.do/.well-known/acme-challenge/H05mWCWty49IUPmQo56ZFjPAmLl7oqc__09DRY2hSsU: Timeout during connect (likely firewall problem)
+
+Hint: The Certificate Authority failed to verify the temporary Apache configuration changes made by Certbot. Ensure that the listed domains point to this Apache server and that it is accessible from the internet.
+
+Some challenges have failed.
+Ask for help or search for solutions at https://community.letsencrypt.org. See the logfile /var/log/letsencrypt/letsencrypt.log or re-run Certbot with -v for more details.
+bnphuser@dspace:~$

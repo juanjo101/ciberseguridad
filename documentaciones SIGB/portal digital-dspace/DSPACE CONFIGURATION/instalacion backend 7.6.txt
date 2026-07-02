@@ -1,0 +1,55 @@
+
+su - root
+usermod -aG sudo (usuario dspace)
+sudo apt install vim
+sudo apt install default-jdk
+sudo apt-get maven
+sudo apt-get install ant
+
+
+curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/postgresql.gpg
+echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee  /etc/apt/sources.list.d/pgdg.list
+sudo apt update
+sudo apt install postgresql postgresql-client
+
+sudo chown -R (usuario: grupo) /opt 
+ edit postgresql.conf and pg_hba.conf
+
+
+wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.87/bin/apache-tomcat-9.0.87.tar.gz
+https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.87/bin/apache-tomcat-9.0.87-deployer.tar.gz
+
+at mvn package I had a build faliure so I had to install git
+
+then i installed ant on ~/DSpace-dspace-7.6/dspace/target/dspace-installer
+
+     [echo]  The DSpace code has been installed.
+     [echo]
+     [echo]  To complete installation, you should do the following:
+     [echo]
+     [echo]  * Setup your Web servlet container (e.g. Tomcat) to look for your
+     [echo]    DSpace web applications in: /dspace/webapps/
+     [echo]
+     [echo]    OR, copy any web applications from /dspace/webapps/ to
+     [echo]    the appropriate place for your servlet container.
+     [echo]    (e.g. '$CATALINA_HOME/webapps' for Tomcat)
+     [echo]
+     [echo]  * Start up your servlet container (e.g. Tomcat). DSpace now will
+     [echo]    initialize the database on the first startup.
+     [echo]
+     [echo]  * Make an initial administrator account (an e-person) in DSpace:
+     [echo]
+     [echo]    /dspace/bin/dspace create-administrator
+     [echo]
+     [echo]  You should then be able to access your DSpace's REST API:
+     [echo]
+     [echo]    http://10.3.2.126:8080/server
+     [echo]
+     [echo] ====================================================================
+
+
+\\\\\
+sudo cp -R /dspace/webapps/* /opt/tomcat9/webapps
+sudo cp -R /dspace/solr/* /var/solr/data/
+sudo chown -R solr:solr oai/ statistics/ search/ authority/
+ 

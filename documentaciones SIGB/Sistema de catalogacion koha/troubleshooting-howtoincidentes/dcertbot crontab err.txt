@@ -1,0 +1,4 @@
+el crontab estaba bien configurado
+Debido al bloqueo de puerto 80 en el Fortinet 
+le comando "sudo certbot renew" estaba dando error
+para proximas renovaciones necesitamos habilitar el puerto y luego de executar cerrar el acceso nuevamente.

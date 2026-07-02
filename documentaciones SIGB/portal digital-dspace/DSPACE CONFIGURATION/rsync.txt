@@ -1,0 +1,2 @@
+sent 26,720,571 bytes  received 17,811,724 bytes  42,512.93 bytes/sec
+total size is 185,034,824,710  speedup is 4,155.07

@@ -1,0 +1,18 @@
+
+[mysql] en esta seccion se agrego las siguentes propiedades
+
+innodb_buffer_pool_size = 32G  
+innodb_log_file_size = 1G 
+query_cache_size = 256M 
+max_connections = 500
+innodb_flush_log_at_trx_commit = 2 
+innodb_thread_concurrency = 16   
+
+
+y en sudo vim /etc/mysql/mariadb.conf.d/50-server.cnf
+
+en /etc/memcached.conf
+
+solo se puso de mmemoria -64 a -256
+ 
+
