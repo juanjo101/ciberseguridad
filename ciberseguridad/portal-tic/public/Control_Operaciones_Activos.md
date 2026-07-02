@@ -1,15 +1,25 @@
-![Logo BNPHU](/logo-bnphu.png)
+<table style="width:100%; text-align:center; border-collapse: collapse; margin-bottom: 20px;" border="1">
+  <tr>
+    <td rowspan="2" style="width: 20%; padding: 10px;"><img src="/logo-bnphu.png" style="width: 120px;" /></td>
+    <td style="font-weight: bold; width: 60%; padding: 10px; font-size: 1.1em;">BIBLIOTECA NACIONAL PEDRO HENRÍQUEZ UREÑA</td>
+    <td rowspan="2" style="width: 20%; padding: 10px;">DPyD<br>Versión 1:<br>Enero, 2020</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold; padding: 10px;">MANUAL DE POLÍTICAS Y PROCEDIMIENTOS</td>
+  </tr>
+</table>
 
-# BIBLIOTECA NACIONAL PEDRO HENRÍQUEZ UREÑA
-**DPyD | Versión 1**
-**MANUAL DE POLÍTICAS Y PROCEDIMIENTOS**
-
----
-
-**NOMBRE DEL PROCESO:** Control de Operaciones e Inventario (Web, WiFi, Móviles, Cloud)
-
-| Preparado por: Departamento de TIC | Aprobado por: Dirección Nacional | Código/Páginas: BNPHU-TIC-006 |
-|---|---|---|
+<table style="width:100%; border-collapse: collapse; margin-bottom: 20px;" border="1">
+  <tr style="background-color: #DDEBF7;">
+    <td colspan="4" style="padding: 5px;"><strong>NOMBRE DEL PROCESO:</strong> Control de Operaciones e Inventario (Web, WiFi, Móviles, Cloud)</td>
+  </tr>
+  <tr style="background-color: #DDEBF7;">
+    <td style="width: 25%; padding: 5px;"><strong>Preparado por:</strong> Departamento de TIC</td>
+    <td style="width: 25%; padding: 5px;"><strong>Aprobado por:</strong> Dirección Nacional</td>
+    <td style="width: 20%; padding: 5px;"><strong>Código/<br>Páginas:</strong></td>
+    <td style="width: 30%; padding: 5px;">BNPHU-TIC-006<br>2</td>
+  </tr>
+</table>
 
 **1.0 Propósito o Misión:**
 Establecer las medidas de protección y control sobre las plataformas web, redes inalámbricas, dispositivos móviles corporativos, adopción de la nube y mantener un registro fiel de los activos de la institución.
