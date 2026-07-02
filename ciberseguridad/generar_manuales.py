@@ -108,12 +108,28 @@ def create_procedure(filename_docx, filename_md, data):
     e = header_table.cell(0, 2)
     f = header_table.cell(1, 2)
     e.merge(f)
-    e.text = "DPyD\nVersión 1"
+    e.text = "DPyD\nVersión 1:\nEnero, 2020"
     e.paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
+    
+    # Set explicit column widths for header table
+    header_table.autofit = False
+    header_table.allow_autofit = False
+    for r in header_table.rows:
+        r.cells[0].width = Inches(1.5)
+        r.cells[1].width = Inches(4.5)
+        r.cells[2].width = Inches(1.5)
 
     doc.add_paragraph() 
-
+    
     main_table = doc.add_table(rows=0, cols=3)
+    main_table.autofit = False
+    main_table.allow_autofit = False
+    
+    def set_main_row_widths(r):
+        r.cells[0].width = Inches(2.5)
+        r.cells[1].width = Inches(3.0)
+        r.cells[2].width = Inches(2.0)
+
     main_table.style = 'Table Grid'
 
     row = main_table.add_row()
@@ -122,11 +138,13 @@ def create_procedure(filename_docx, filename_md, data):
     row.cells[0].paragraphs[0].runs[0].bold = True
 
     row = main_table.add_row()
+    set_main_row_widths(row)
     row.cells[0].text = f"Preparado por: {data['preparado']}"
     row.cells[1].text = f"Aprobado por: {data['aprobado']}"
-    row.cells[2].text = f"Código/Páginas: {data.get('codigo', 'BNPHU-TIC-00X')}"
+    row.cells[2].text = f"Código/Páginas:\n{data.get('codigo', 'BNPHU-TIC-00X')}"
 
     row = main_table.add_row()
+    set_main_row_widths(row)
     row.cells[0].merge(row.cells[1]).merge(row.cells[2])
     row.cells[0].text = f"1.0 Propósito o Misión:\n{data['proposito']}"
 
