@@ -86,7 +86,17 @@ def create_procedure(filename_docx, filename_md, data):
     font.name = 'Calibri'
     font.size = Pt(10)
 
-    header_table = doc.add_table(rows=2, cols=3)
+    # Access the document header
+    section = doc.sections[0]
+    header = section.header
+    
+    # Remove the default empty paragraph in the header to avoid extra space
+    for paragraph in header.paragraphs:
+        p = paragraph._element
+        p.getparent().remove(p)
+        p._p = p._element = None
+
+    header_table = header.add_table(rows=2, cols=3, width=Inches(7.5))
     header_table.style = 'Table Grid'
     
     a = header_table.cell(0, 0)
