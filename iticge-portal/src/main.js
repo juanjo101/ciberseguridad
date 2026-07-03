@@ -13,7 +13,7 @@ const btnPdf = document.getElementById('btn-print');
 async function loadDocument(docPath) {
   documentView.innerHTML = '<div class="loading">Cargando documento...</div>';
   try {
-    const response = await fetch(docPath);
+    const response = await fetch(`${docPath}?t=${new Date().getTime()}`, { cache: 'no-store' });
     if (!response.ok) throw new Error('Error al cargar');
     const text = await response.text();
     documentView.innerHTML = marked.parse(text);
