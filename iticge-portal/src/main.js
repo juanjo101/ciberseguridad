@@ -104,12 +104,41 @@ documentView.addEventListener('click', (e) => {
   }
 });
 
+function scrollToAnchor(anchorId) {
+  setTimeout(() => {
+    const el = document.getElementById(anchorId);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, 150);
+}
+
 menuLinks.forEach(link => {
   link.addEventListener('click', (e) => {
     e.preventDefault();
+    
+    const parentLi = link.parentElement;
+    if (parentLi.classList.contains('has-submenu') && !link.closest('.submenu')) {
+      parentLi.classList.toggle('expanded');
+    }
+    
     menuLinks.forEach(l => l.classList.remove('active'));
-    e.target.classList.add('active');
-    loadDocument(e.target.dataset.doc);
+    link.classList.add('active');
+    
+    if (link.closest('.submenu')) {
+      link.closest('.has-submenu').querySelector('a').classList.add('active');
+    }
+    
+    const docPath = link.dataset.doc;
+    const anchor = link.dataset.anchor;
+    
+    if (currentDoc !== docPath) {
+      loadDocument(docPath).then(() => {
+        if (anchor) scrollToAnchor(anchor);
+      });
+    } else {
+      if (anchor) scrollToAnchor(anchor);
+    }
   });
 });
 

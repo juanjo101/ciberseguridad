@@ -207,6 +207,48 @@ code {
   border-right: 4px solid #1d4ed8;
 }
 
+.has-submenu > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  font-size: 10px;
+  transition: transform 0.3s ease;
+}
+
+.has-submenu.expanded .arrow {
+  transform: rotate(-180deg);
+}
+
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #f8fafc;
+}
+
+.has-submenu.expanded .submenu {
+  max-height: 500px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.submenu li a {
+  padding: 10px 24px 10px 40px !important;
+  font-size: 13.5px !important;
+  color: #64748b !important;
+  border-right: none !important;
+}
+
+.submenu li a:hover {
+  color: #1d4ed8 !important;
+  background-color: #e2e8f0 !important;
+}
+
 .content {
   flex: 1;
   padding: 40px;
