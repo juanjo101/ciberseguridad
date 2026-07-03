@@ -2,7 +2,7 @@ import './style.css'
 import { marked } from 'marked';
 import Chart from 'chart.js/auto';
 
-let currentDoc = '/Dashboard_Global.md';
+let currentDoc = '/Dashboard_Global.html';
 let radarChartInstance = null;
 
 const documentView = document.getElementById('document-view');
@@ -16,7 +16,12 @@ async function loadDocument(docPath) {
     const response = await fetch(`${docPath}?t=${new Date().getTime()}`, { cache: 'no-store' });
     if (!response.ok) throw new Error('Error al cargar');
     const text = await response.text();
-    documentView.innerHTML = marked.parse(text);
+    
+    if (docPath.endsWith('.html')) {
+      documentView.innerHTML = text;
+    } else {
+      documentView.innerHTML = marked.parse(text);
+    }
     currentDoc = docPath;
     
     const actionsDiv = document.querySelector('.actions');
@@ -27,7 +32,7 @@ async function loadDocument(docPath) {
     }
     
     // Render chart if it's the global dashboard
-    if (docPath === '/Dashboard_Global.md') {
+    if (docPath === '/Dashboard_Global.html') {
       setTimeout(() => {
         const ctx = document.getElementById('radarChart');
         if (ctx) {
