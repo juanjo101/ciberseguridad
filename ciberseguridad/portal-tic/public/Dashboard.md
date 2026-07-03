@@ -1,5 +1,16 @@
 # 📊 Dashboard iTICge: Pilar de Ciberseguridad (NORTIC A7)
 
+<div style="background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 30px; text-align: center; border-top: 4px solid #3b82f6;">
+  <h2 style="margin-top: 0; color: #334155; font-size: 1.2em; text-transform: uppercase; letter-spacing: 1px;">Porcentaje Global de Cumplimiento (NORTIC A7)</h2>
+  <div style="font-size: 4em; font-weight: 800; color: #3b82f6; margin: 10px 0; line-height: 1;">65%</div>
+  <div style="width: 100%; background: #e2e8f0; border-radius: 999px; height: 16px; margin: 20px 0; overflow: hidden;">
+    <div style="background: linear-gradient(90deg, #3b82f6 0%, #10b981 100%); width: 65%; height: 100%; border-radius: 999px;"></div>
+  </div>
+  <div style="display: flex; justify-content: space-between; color: #64748b; font-size: 0.9em; font-weight: 600;">
+    <span>Fase Documental: 100% ✅</span>
+    <span>Fase de Evidencias Operativas: 30% ⏳</span>
+  </div>
+</div>
 <div style="display: flex; gap: 20px; margin-bottom: 30px; flex-wrap: wrap;">
   <div style="flex: 1; min-width: 200px; background: #f8fafc; padding: 20px; border-radius: 8px; border-left: 4px solid #2563eb; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
     <h3 style="margin-top: 0; color: #1e293b; font-size: 1.1em;">Puntuación iTICge Estimada</h3>
