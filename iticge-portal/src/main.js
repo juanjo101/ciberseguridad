@@ -55,8 +55,8 @@ async function loadDocument(docPath) {
                 }]
               },
               options: {
-                responsive: true,
-                maintainAspectRatio: false,
+                responsive: false,
+                maintainAspectRatio: true,
                 elements: { line: { borderWidth: 3 } },
                 scales: { r: { angleLines: { display: true }, suggestedMin: 0, suggestedMax: 100 } }
               }
@@ -66,6 +66,21 @@ async function loadDocument(docPath) {
           }
         }
         
+        // Fallback explicit click listeners for the cards to guarantee they work
+        document.querySelectorAll('.kpi-card').forEach(card => {
+          card.style.cursor = 'pointer';
+          card.onclick = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            const targetDoc = this.getAttribute('data-target');
+            if (targetDoc) {
+              menuLinks.forEach(l => l.classList.remove('active'));
+              const matchingLink = Array.from(menuLinks).find(l => l.dataset.doc === targetDoc);
+              if (matchingLink) matchingLink.classList.add('active');
+              loadDocument(targetDoc);
+            }
+          };
+        });
         
       }, 150); // Increased timeout slightly to ensure DOM is ready
     }
@@ -75,10 +90,10 @@ async function loadDocument(docPath) {
   }
 }
 
-// Event delegation for KPI cards
+// Global Event delegation for KPI cards (fallback)
 documentView.addEventListener('click', (e) => {
   const card = e.target.closest('.kpi-card');
-  if (card) {
+  if (card && !card.onclick) {
     const targetDoc = card.dataset.target;
     if (targetDoc) {
       menuLinks.forEach(l => l.classList.remove('active'));
