@@ -31,28 +31,34 @@ async function loadDocument(docPath) {
       setTimeout(() => {
         const ctx = document.getElementById('radarChart');
         if (ctx) {
-          if (radarChartInstance) radarChartInstance.destroy();
-          radarChartInstance = new Chart(ctx, {
-            type: 'radar',
-            data: {
-              labels: ['Uso de las TIC', 'Gestión y Controles', 'Ciberseguridad', 'Gobierno Digital', 'e-Participación', 'Servicios en Línea', 'Innovación'],
-              datasets: [{
-                label: 'Puntuación Alcanzada (Base 100)',
-                data: [52.8, 68.9, 49.0, 28.5, 41.9, 25.4, 10.0], // calculated as (Score / Weight) * 100 roughly for display
-                fill: true,
-                backgroundColor: 'rgba(59, 130, 246, 0.2)',
-                borderColor: 'rgb(59, 130, 246)',
-                pointBackgroundColor: 'rgb(59, 130, 246)',
-                pointBorderColor: '#fff',
-                pointHoverBackgroundColor: '#fff',
-                pointHoverBorderColor: 'rgb(59, 130, 246)'
-              }]
-            },
-            options: {
-              elements: { line: { borderWidth: 3 } },
-              scales: { r: { angleLines: { display: true }, suggestedMin: 0, suggestedMax: 100 } }
-            }
-          });
+          try {
+            if (radarChartInstance) radarChartInstance.destroy();
+            radarChartInstance = new Chart(ctx, {
+              type: 'radar',
+              data: {
+                labels: ['Uso de las TIC', 'Gestión y Controles', 'Ciberseguridad', 'Gobierno Digital', 'e-Participación', 'Servicios en Línea', 'Innovación'],
+                datasets: [{
+                  label: 'Puntuación Alcanzada (Base 100)',
+                  data: [52.8, 68.9, 49.0, 28.5, 41.9, 25.4, 10.0],
+                  fill: true,
+                  backgroundColor: 'rgba(59, 130, 246, 0.2)',
+                  borderColor: 'rgb(59, 130, 246)',
+                  pointBackgroundColor: 'rgb(59, 130, 246)',
+                  pointBorderColor: '#fff',
+                  pointHoverBackgroundColor: '#fff',
+                  pointHoverBorderColor: 'rgb(59, 130, 246)'
+                }]
+              },
+              options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                elements: { line: { borderWidth: 3 } },
+                scales: { r: { angleLines: { display: true }, suggestedMin: 0, suggestedMax: 100 } }
+              }
+            });
+          } catch (e) {
+            console.error("Error drawing chart:", e);
+          }
         }
         
         

@@ -9,7 +9,9 @@
 <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
   <div style="flex: 1; min-width: 400px; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
     <h3 style="text-align: center; color: #334155;">Desempeño por Pilares</h3>
-    <canvas id="radarChart" width="400" height="400"></canvas>
+    <div style="position: relative; height: 400px; width: 100%;">
+      <canvas id="radarChart"></canvas>
+    </div>
   </div>
   
   <div style="flex: 1; min-width: 300px; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
