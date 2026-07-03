@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal iTICge 2025 - BNPHU</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <nav class="sidebar no-print">
+        <div class="logo">
+          <h2>BNPHU</h2>
+          <p>Sistema Central iTICge 2025</p>
+        </div>
+        <ul id="menu">
+          <li><a href="#" class="active" data-doc="/Dashboard_Global.md">📊 Dashboard Global</a></li>
+          <li><a href="#" data-doc="/Pilar_Uso_TIC.md">1. Uso de las TIC</a></li>
+          <li><a href="#" data-doc="/Pilar_Gestion_Controles.md">2. Gestión y Controles</a></li>
+          <li><a href="#" data-doc="/Dashboard.md">3. Ciberseguridad (NORTIC A7)</a></li>
+          <li><a href="#" data-doc="/Pilar_Gobierno_Digital.md">4. Gobierno Digital</a></li>
+          <li><a href="#" data-doc="/Pilar_eParticipacion.md">5. e-Participación</a></li>
+          <li><a href="#" data-doc="/Pilar_Servicios_Linea.md">6. Servicios en Línea</a></li>
+          <li><a href="#" data-doc="/Pilar_Innovacion.md">7. Innovación</a></li>
+        </ul>
+        <div class="actions">
+          <button id="btn-print" class="btn btn-primary" style="display:none;">Exportar a PDF</button>
+          <button id="btn-word" class="btn btn-secondary" style="display:none;">Exportar a Word</button>
+        </div>
+      </nav>
+      <main class="content">
+        <div id="document-view" class="markdown-body">
+          <div class="loading">Cargando documento...</div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
