@@ -935,3 +935,1062 @@ estipula la Nortic A7?</h4>
   </div>
 </div>
 
+
+<br>
+
+<h3 id="cuestionario-oficial">📝 Cuestionario Oficial de Evaluación (iTICge 2025)</h3>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">1 CS -¿Posee su institución algún acuerdo de colaboración con el Centro Nacional
+de Ciberseguridad (CNCS) firmado por la máxima autoridad de la institución?</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+  <div style='color: #64748b; font-size: 0.9em;'><strong>Evidencias Sugeridas (OGTIC):</strong><ul style='margin-top: 5px; margin-bottom: 0; padding-left: 20px;'><li>Acuerdo firmado por la maxima autoridad, donde se identifique la participacion bilateral entre las entidades.</li></ul></div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">2 CS -¿Tiene el departamento de TIC documentado los procesos de análisis
+de impacto (BIA)?</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+  <div style='color: #64748b; font-size: 0.9em;'><strong>Evidencias Sugeridas (OGTIC):</strong><ul style='margin-top: 5px; margin-bottom: 0; padding-left: 20px;'><li>Documento BIA, informes de impacto, procedimientos o matrices de análisis.</li></ul></div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">3 CS -¿Se ha realizado una evaluación de riesgos?</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+  <div style='color: #64748b; font-size: 0.9em;'><strong>Evidencias Sugeridas (OGTIC):</strong><ul style='margin-top: 5px; margin-bottom: 0; padding-left: 20px;'><li>Informe de evaluación de riesgos o matriz de riesgos.</li><li>Informe o matriz de riesgos con niveles de tolerancia definidos.</li><li>Evidencia derivada del análisis de riesgos.</li></ul></div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">4 CS -¿De acuerdo con el resultado de la evaluación de riesgos, se identificaron sus niveles de tolerancias?</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">5 CS - Favor seleccionar el nivel de tolerancia</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Alta</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Media</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Baja</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Sin Identificar</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">6 CS - ¿Cuáles son las 5 aplicaciones y/o plataformas claves/críticos de la organización? Enumerar en orden de criticidad.</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+  <div style='color: #64748b; font-size: 0.9em;'><strong>Evidencias Sugeridas (OGTIC):</strong><ul style='margin-top: 5px; margin-bottom: 0; padding-left: 20px;'><li>Listado de aplicaciones críticas, fichas técnicas o inventario TIC.</li></ul></div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">1 - Nombre de la aplicaciones y/o plataformas</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">2 - Nombre de la aplicaciones y/o plataformas</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">3 - Nombre de la aplicaciones y/o plataformas</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">4 - Nombre de la aplicaciones y/o plataformas</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">5 - Nombre de la aplicaciones y/o plataformas</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">7 CS -¿Cuenta la infraestructura tecnológica de su institución con los requisitos o controles de ciberseguridad?</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+  <div style='color: #64748b; font-size: 0.9em;'><strong>Evidencias Sugeridas (OGTIC):</strong><ul style='margin-top: 5px; margin-bottom: 0; padding-left: 20px;'><li>Informes de auditoría, reportes técnicos o políticas de seguridad.</li><li>Capturas de configuración, licencias, reportes de funcionamiento.</li></ul></div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">8 CS - Favor indicar el tipo:</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Protección perimetral (firewall)</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Backup</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Antivirus</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Controles de Acceso</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Monitoreo</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">9 CS -¿Existen elementos que pudieran interrumpir los servicios esenciales de acuerdo con
+su criticidad?</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+  <div style='color: #64748b; font-size: 0.9em;'><strong>Evidencias Sugeridas (OGTIC):</strong><ul style='margin-top: 5px; margin-bottom: 0; padding-left: 20px;'><li>Informe de riesgos, actas o reportes de continuidad de servicios.</li><li>Reportes de incidentes o evidencias de fallos previos.</li></ul></div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">10 CS - Seleccionar los que apliquen para su caso:</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Prestadora de servicios de datos</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Equipos tecnológicos al 100% de su capacidad</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Falla de energía eléctrica</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Saturación o cuello de botella de la data</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Daños de los equipos</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Otros</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Ninguno</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">De ser "Otros" (inclúyalas en el campo, separadas por coma)</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">11 CS - ¿Cuál sería el nivel de interrupción de los servicios de acuerdo con su criticidad?</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+  <div style='color: #64748b; font-size: 0.9em;'><strong>Evidencias Sugeridas (OGTIC):</strong><ul style='margin-top: 5px; margin-bottom: 0; padding-left: 20px;'><li>Informe o matriz de impacto operacional.</li></ul></div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Alta</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Media</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Baja</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">12 CS -¿Se establecen programas de capacitación continua en ciberseguridad para el personal de TI?</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+  <div style='color: #64748b; font-size: 0.9em;'><strong>Evidencias Sugeridas (OGTIC):</strong><ul style='margin-top: 5px; margin-bottom: 0; padding-left: 20px;'><li>Plan de capacitación, registros de asistencia, materiales de formación.</li></ul></div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">13 CS -¿Han realizado actividades de concienciación para todo el personal que labora
+en la institución?</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+  <div style='color: #64748b; font-size: 0.9em;'><strong>Evidencias Sugeridas (OGTIC):</strong><ul style='margin-top: 5px; margin-bottom: 0; padding-left: 20px;'><li>Reportes de actividades, fotos, materiales o certificaciones.</li><li>Registro de actividades, agendas o informes de participación.</li></ul></div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">14 CS - Elegir el tipo:</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Charlas</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Talleres</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Simulacros</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">15 CS -¿Se mantiene al personal de la institución actualizado en temas de ciberseguridad?</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+  <div style='color: #64748b; font-size: 0.9em;'><strong>Evidencias Sugeridas (OGTIC):</strong><ul style='margin-top: 5px; margin-bottom: 0; padding-left: 20px;'><li>Registro de capacitaciones, boletines informativos o comunicados.</li></ul></div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">16 CS - Seleccione en las que aplique:</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Boletines</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Correos informativos</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Publicaciones en murales</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">17 CS -¿Existe un personal responsable de gestionar e identificar el proceso de vulnerabilidades?</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+  <div style='color: #64748b; font-size: 0.9em;'><strong>Evidencias Sugeridas (OGTIC):</strong><ul style='margin-top: 5px; margin-bottom: 0; padding-left: 20px;'><li>Nombramiento formal, descripción de funciones, organigrama TIC.</li><li>Informe de vulnerabilidades, hojas de firma, plan de remediación.</li></ul></div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">18 CS -¿Se han identificado, documentado, priorizado las vulnerabilidades, y el mismo está firmado por los responsables?</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Redes de Comunicación</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Sistemas</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Accesos</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Entorno físico</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Otros</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Ninguno</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">19 CS - ¿Cuáles de sus servicios esenciales se monitorea la provisión de manera constante (24x7)?</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+  <div style='color: #64748b; font-size: 0.9em;'><strong>Evidencias Sugeridas (OGTIC):</strong><ul style='margin-top: 5px; margin-bottom: 0; padding-left: 20px;'><li>Documento donde se observe sus servicios esenciales, los cuales se monitorea constantemente por las diferentes vias.</li></ul></div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Redes de Comunicación</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Sistemas</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Accesos</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Entorno físico</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Otros</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Ninguno</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">20 CS -¿Cuenta el Departamento de TIC con un documento formal conteniendo los criterios para identificar un incidente de seguridad, disponible para personal responsable?</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+  <div style='color: #64748b; font-size: 0.9em;'><strong>Evidencias Sugeridas (OGTIC):</strong><ul style='margin-top: 5px; margin-bottom: 0; padding-left: 20px;'><li>Manual o procedimiento de gestión de incidentes.</li><li>Registros de monitoreo, alertas de seguridad, reportes de detección.</li></ul></div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">21 CS - Seleccionar los que apliquen para su caso (Mostrar evidencias al auditor)</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Registrar y monitorizar los eventos de las redes, sistemas y aplicaciones.</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Recolectar información situacional que permita detectar anomalías.</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Disponer de capacidades para descubrir ciberincidentes y comunicarlos al personal responsable.</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Recopilar y almacenar de forma segura todas las evidencias.</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Compartir información con otros equipos internos y externos de forma bidireccional para mejorar las capacidades de detección.</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Mantener informados a los funcionarios, contratistas o terceros sobre las nuevas vulnerabilidades, actualizaciones a las plataformas y recomendaciones de seguridad informática a través de algún medio de comunicación</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">Otros criterios</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">22 CS -¿Existe una estructura de ciberseguridad para responder y recuperarse de los ciber incidentes? (Mostrar evidencias)</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+  <div style='color: #64748b; font-size: 0.9em;'><strong>Evidencias Sugeridas (OGTIC):</strong><ul style='margin-top: 5px; margin-bottom: 0; padding-left: 20px;'><li>Organigrama o plan de respuesta a incidentes.</li><li>Documento que muestre como pueden responder y recuperarse de un ciber incidente ( comité, estructura funcional compartida con todas las areas, herramientas tecnologicas y controles tecnicos, capacitaciones, estrategias).</li></ul></div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">23 CS -¿Existe una matriz de escalamiento de los incidentes de Ciberseguridad?</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+  <div style='color: #64748b; font-size: 0.9em;'><strong>Evidencias Sugeridas (OGTIC):</strong><ul style='margin-top: 5px; margin-bottom: 0; padding-left: 20px;'><li>Matriz o diagrama de escalamiento firmado por responsables.</li></ul></div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">24 CS -¿Existe un plano o esquema de la estructura física apegada a los lineamientos de la Ciberseguridad?</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+  <div style='color: #64748b; font-size: 0.9em;'><strong>Evidencias Sugeridas (OGTIC):</strong><ul style='margin-top: 5px; margin-bottom: 0; padding-left: 20px;'><li>Diagrama de red, planos de infraestructura tecnológica.</li></ul></div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">25 CS -¿Existe un procedimiento formal para informar al Centro Nacional de
+Ciberseguridad los Ciber incidentes graves que se produzcan?</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+  <div style='color: #64748b; font-size: 0.9em;'><strong>Evidencias Sugeridas (OGTIC):</strong><ul style='margin-top: 5px; margin-bottom: 0; padding-left: 20px;'><li>Procedimiento documentado y firmado, flujos de comunicación.</li></ul></div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">26 CS -¿Existe un plan de continuidad de la infraestructura de la organización?</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+  <div style='color: #64748b; font-size: 0.9em;'><strong>Evidencias Sugeridas (OGTIC):</strong><ul style='margin-top: 5px; margin-bottom: 0; padding-left: 20px;'><li>Plan de continuidad institucional o plan TIC.</li></ul></div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">27 CS -¿Existe un plan de continuidad de los servicios críticos?</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+  <div style='color: #64748b; font-size: 0.9em;'><strong>Evidencias Sugeridas (OGTIC):</strong><ul style='margin-top: 5px; margin-bottom: 0; padding-left: 20px;'><li>Plan específico de servicios críticos.</li></ul></div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">28 CS -¿Existe un documento para la gestión de la integridad de los activos como lo
+estipula la Nortic A7?</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+  <div style='color: #64748b; font-size: 0.9em;'><strong>Evidencias Sugeridas (OGTIC):</strong><ul style='margin-top: 5px; margin-bottom: 0; padding-left: 20px;'><li>Documento de gestión de activos, políticas de inventario y control.</li></ul></div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+
+<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">29 CS - Favor colocar el URL con las evidencias de sus respuestas</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: 0.03 pts</span>
+  </div>
+  <div style='color: #64748b; font-size: 0.9em;'><strong>Evidencias Sugeridas (OGTIC):</strong><ul style='margin-top: 5px; margin-bottom: 0; padding-left: 20px;'><li>Enlace a repositorio, SharePoint o carpeta institucional.</li></ul></div>
+
+  <div style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    <label style="display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9em; cursor: pointer;">
+      <input type="checkbox" style="width: 16px; height: 16px;"> Marcar evidencia como completada y subida a SISTICGE
+    </label>
+  </div>
+</div>
+

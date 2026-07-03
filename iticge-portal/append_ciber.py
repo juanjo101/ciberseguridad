@@ -7,7 +7,15 @@ df = xl.parse('Ciberseguridad')
 pregunta_col = next((c for c in df.columns if 'PREGUNTA' in str(c).upper()), None)
 evidencia_col = next((c for c in df.columns if 'EVIDENCIA' in str(c).upper()), None)
 
-append_content = '\n<br>\n\n### 📝 Cuestionario Oficial de Evaluación (iTICge 2025)\n\n'
+valid_questions = 0
+for index, row in df.iterrows():
+    pregunta = str(row[pregunta_col])
+    if not pd.isna(row[pregunta_col]) and pregunta != 'nan':
+        valid_questions += 1
+        
+points_per_evidence = 2.0 / valid_questions if valid_questions > 0 else 0
+
+append_content = '\n<br>\n\n<h3 id="cuestionario-oficial">📝 Cuestionario Oficial de Evaluación (iTICge 2025)</h3>\n\n'
 
 for index, row in df.iterrows():
     pregunta = str(row[pregunta_col])
@@ -17,7 +25,10 @@ for index, row in df.iterrows():
         continue
         
     append_content += f"""<div style="background: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 15px;">
-  <h4 style="margin: 0 0 10px 0; color: #334155;">{pregunta.strip()}</h4>
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+    <h4 style="margin: 0 0 10px 0; color: #334155;">{pregunta.strip()}</h4>
+    <span style="background: #eff6ff; color: #1d4ed8; font-size: 0.8em; font-weight: 600; padding: 4px 8px; border-radius: 12px; white-space: nowrap; border: 1px solid #bfdbfe;">Valor: {points_per_evidence:.2f} pts</span>
+  </div>
 """
     if evidencia and evidencia != 'nan':
         evidencias_list = evidencia.split('\n')
